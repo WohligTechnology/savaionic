@@ -1,0 +1,169 @@
+<ion-view>
+  <div class="bar bar-header bar-light header-bottom ">
+    <h1 class="title login-bar"><img src="/img/back.png" alt="back"  class="back"/><span class="title-name">Branch Registration</span>
+<img src="/img/forward.png" alt="forward" class="forward"/>
+
+</div>
+<div class="item save-block">
+
+<button  class="save button button-clear pull-right" ui-sref="preview-branchdetail">Save</button>
+
+<div contenteditable="true" class="editable" placeholder="Enter Branch Name,Address ,Contact Number"  class="registration-select"></div>
+</div>
+<ion-content class="business-reg-content" >
+
+<form class="form-margin" action="index.html" method="post">
+  <div class="business-reg">
+    <div>
+    <i class="fa fa-building  icon-user sign-up-color"> </i>
+  <input type="text" placeholder="Branch Name"  class="registration-select">
+</div>
+    <div>
+    <i class="fa fa-newspaper-o  icon-user sign-up-color"> </i>
+  <input type="text" placeholder="Branch ID"  class="registration-select">
+</div>
+    <!-- <div >
+    <i class="fa fa-map-marker  icon-user sign-up-color"> </i>
+  <input type="text" placeholder="Address"  class="registration-select">
+  <button class="button button-positive plusbutton"><i class="fa fa-plus"></i></button>
+</div> -->
+
+  <div class=" enter-otp add-button">
+
+    <i class="fa fa-map-marker icon-lock sign-up-color"> </i>
+
+  <input type="text" placeholder="Address"  class="password">
+  <button class="button button-positive plusbutton  password-eye" ui-sref="branch-address"><i class="fa fa-plus"></i></button>
+</div>
+
+    <div>
+    <i class="fa fa-phone  icon-user sign-up-color"> </i>
+  <input type="text" placeholder="Contact Number"  class="registration-select">
+</div>
+
+<button class="add-more button button-positive button-clear" >Add more</button>
+
+<div >
+<i class="fa fa-user-plus  icon-user sign-up-color"> </i>
+<input type="text" placeholder="Number of Employees"  class="registration-select">
+</div>
+<label for="" class="item label-header">Photo
+<button class="button button-positive plusbutton"><i class="fa fa-plus"></i></button>
+</label>
+<img src="/img/photos.png" alt=""  class="photos"/>
+<img src="/img/photos.png" alt="" class="photos"/>
+<img src="/img/photos.png" alt="" class="photos"/>
+<img src="/img/photos.png " alt="" class="photos"/>
+<button class="button button-light add-photo ">Add photo</i></button>
+
+<label class="item label-header">Hours</label>
+<div class="time-margin">
+  <label  class="">Monday 10:00 am to 2pm ,6pm to 10:00 pm</label>
+
+</div>
+<label class="item time-block">
+  <div class="">
+    <label for="">Tuesday <i class="fa fa-trash"></i></label>
+  </div>
+  <div class="">
+    <label class="item-input item-select select-regstration sign-up-margin from-to">
+        <select class="registration-select sign-up-color">
+            <option value=""  disabled selected >from</option>
+          <option>Blue</option>
+          <option>Green</option>
+          <option>Red</option>
+        </select>
+      </label>
+      <label class="item-input item-select select-regstration sign-up-margin from-to ">
+          <select class="registration-select sign-up-color">
+              <option value=""  disabled selected >To</option>
+            <option>Blue</option>
+            <option>Green</option>
+            <option>Red</option>
+          </select>
+        </label>
+        <button class="button button-positive plusbutton button-time"><i class="fa fa-plus"></i></button>
+  </div>
+
+
+</label>
+<div class="day">
+<button class="button button-positive day-button" name="button">Mon</button>
+<button class="button button-positive day-button" name="button">Tue</button>
+<button class="button button-positive day-button" name="button">Wed</button>
+<button class="button button-positive day-button" name="button">Thus</button>
+<button class="button button-positive day-button" name="button">Fri</button>
+<button class="button button-positive day-button" name="button">Sat</button>
+<button class="button button-positive day-button" name="button">Sun</button>
+<button class="button button-positive day-button" name="button">Select All</button>
+</div>
+<div>
+<i class="fa fa-shopping-bag  icon-user sign-up-color"> </i>
+<input type="text" placeholder="Establishement Types eg (Casual Dining)"  class="registration-select">
+</div>
+<div>
+<i class="fa fa-list  icon-user sign-up-color"> </i>
+<input type="text" placeholder="Cuisines (South American,Continental)"  class="registration-select">
+</div>
+<div class="collection">
+  <input type='checkbox' > collection
+
+</div>
+
+<label class="item-input item-select select-regstration sign-up-margin">
+  <!-- <div class="input-label"> -->
+      <i class="fa fa-calendar-plus-o icon-user sign-up-color"> </i>
+    <!-- </div> -->
+
+    <select class="registration-select sign-up-color">
+        <option value=""  disabled selected >Type of Appointment</option>
+      <option>Blue</option>
+      <option>Green</option>
+      <option>Red</option>
+    </select>
+  </label>
+  <label for="" class="item label-header">Payment Method
+  <button class="button button-positive plusbutton"><i class="fa fa-plus"></i></button>
+</label>
+<div class="payment">
+  <label>
+    <input type='checkbox' > Credit Card
+  </label>
+  <label>
+  <input type='checkbox' > Debit Card
+</label>
+<label>
+  <input type='checkbox' > Cash
+</label>
+<label>
+  <input type='checkbox' > AMEX
+</label>
+<label >
+  <input type='checkbox' > Other Cards
+</label>
+
+</div>
+
+  <div>
+  <i class="fa fa-eur  icon-user sign-up-color"> </i>
+  <input type="text" placeholder="Avg. Cost Per Visit Per Person"  class="registration-select">
+  </div>
+  <div class=" enter-otp">
+             <i class="fa fa-tags icon-tag sign-up-color"> </i>
+                     <input type="text" placeholder="Tags (eg. Private)"  class="password">
+  <i class=" fa fa-info-circle password-eye"></i>
+</div>
+
+</div>
+</form>
+     </ion-content>
+     <div class="bar bar-footer ">
+       <div >
+         <div >
+           <label for="" class="progress-label">35% Completed  </label>
+         </div>
+       <progress value="35" max="100" class="progress">35%</progress>
+     </div>
+     <button  class="bottom-continue button button-clear pull-right" ui-sref="preview-branchdetail">Continue</button>
+     </div>
+    </ion-view>

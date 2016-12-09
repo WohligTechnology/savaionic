@@ -1,0 +1,88 @@
+<ion-view title=" Branch Details">
+  <div class="bar bar-header bar-light header-bottom ">
+<h1 class="title login-bar"><img src="/img/back.png" alt="back"  class="back"/><span class="title-name">Preview Branch Detail</span>
+<img src="/img/forward.png" alt="forward" class="forward"/>
+<!-- <i class="fa fa-search forward"></i></h1> -->
+</div>
+<div class="header-map">
+  <img src="/img/map.png" alt="" class="map-preview " />
+  <button  class="button button-positive circle pull-right" ui-sref="preview-businessdetail"><i class="fa fa-pencil"></i></button>
+
+</div>
+    <ion-content >
+<form class=" business-details " ng-model="previewDetail">
+  <div class="preview-bottom preview-business">
+  <i class="fa fa-building"></i><input type="text" placeholder="Branch Name" class="bottom-disabled"></input>
+</div>
+<div class="preview-bottom preview-business">
+<i class="fa  fa-newspaper-o"></i><input type="text" placeholder="Branch id" class="bottom-disabled"></input>
+</div>
+<div class="preview-bottom preview-business">
+  <i class="fa fa-map-marker"></i><input type="text" placeholder="Address" class="bottom-disabled"></input>
+</div>
+  <div class="preview-bottom preview-business">
+  <i class="fa fa-phone"></i><input type="text" placeholder="Contact number" class="bottom-disabled"></input>
+</div>
+  <div class="preview-bottom preview-business">
+  <i class="fa fa-user-plus"></i><input type="text" placeholder="Number of Employess" class="bottom-disabled"></input>
+</div>
+<label for="" class="item label-header">Photo</label>
+<img src="/img/photos.png" alt=""  class="photos"/>
+<img src="/img/photos.png" alt="" class="photos"/>
+<img src="/img/photos.png" alt="" class="photos"/>
+
+<label class="item label-header">Hours</label>
+<div class="time-margin">
+  <label  class="">Monday 10:00 am to 2pm ,6pm to 10:00 pm</label>
+
+</div>
+<div class="time-margin">
+  <label  class="">Tuesday 10:00 am to 5pm ,6pm to 10:00 pm</label>
+
+</div>
+<div class="preview-bottom preview-business">
+<i class="fa fa-shopping-bag "></i><input type="text" placeholder="Establishement Types eg (Casual Dining)" class="bottom-disabled"></input>
+</div>
+ <div class="preview-bottom preview-business">
+  <i class="fa fa-list "></i><input type="text" placeholder="Cuisines (South American,Continental)" class="bottom-disabled"></input>
+</div>
+<div>
+  <label class="item-input item-select select-regstration sign-up-margin num-branch preview-business">
+        <i class="fa fa-calendar-plus-o icon-user sign-up-color"> </i>
+      <select class="registration-select sign-up-color ">
+          <option value=""  disabled selected >Type of Appointment</option>
+        <option>Blue</option>
+        <option>Green</option>
+        <option>Red</option>
+      </select>
+    </label>
+  </div>
+
+  <label for="" class="item label-header">Payment Method</label>
+  <div class="time-margin">
+    <label  class="">Credit Card,Debit Card,Other Cards</label>
+
+  </div>
+ <div class="preview-bottom preview-business">
+  <i class="fa fa-eur"></i><input type="text" placeholder="Avg. Cost Per Visit Per Person" class="bottom-disabled"></input>
+</div>
+<div class="preview-bottom preview-business">
+<i class="fa fa-tags"></i><input type="text" placeholder="Tags (eg. Private)" class="bottom-disabled"></input>
+</div>
+
+  <!-- <button class="button button-block  button-light continue sign-up" ui-sref="success">
+    Submit</button> -->
+
+</form>
+    </ion-content>
+    <!-- <div class="bar bar-footer">
+
+      <div >
+        <div >
+          <label for="" class="progress-label">35% Completed</label>
+        </div>
+      <progress value="25" max="100" class="progress">50%</progress>
+    </div>
+
+    </div> -->
+   </ion-view>

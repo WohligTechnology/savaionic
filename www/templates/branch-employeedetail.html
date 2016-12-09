@@ -1,0 +1,59 @@
+<ion-view>
+    <div class="bar bar-header bar-light header-bottom ">
+        <h1 class="title login-bar"><img src="/img/back.png" alt="back"  class="back"/><span class="title-name">Check in</span>
+<img src="/img/forward.png" alt="forward" class="forward"/>
+
+</div>
+<ion-content  class="">
+  <div class="">
+
+<div class="branch-address">
+  <div class="address1">
+  <label for="">Vasai(West) , Branch id:1023 </label>
+  </div>
+  <div class="address1">
+  <label for="">CenterOne Shopping Center ,Vashi (W).</label>
+  </div>
+</div>
+
+
+<div class="">
+  <ul class="" >
+  <li ng-repeat="emp1 in employees ">
+    <div class="branch-employee">
+      <img ng-src="{{emp1.image}}" alt="{{emp1.name}}" class= ""/>
+      <div class="branch-emplist">
+
+        <h4>{{emp1.name}}</h4>
+        <h5>{{emp1.empid}}</h5>
+        <h5>{{emp1.position}}</h5>
+        <i class='fa fa-circle circle circle-position {{emp1.status}}'></i>
+        <label for="" class="time-emp">26 July 12am <i class="fa fa-clock-o"></i></label>
+      </div>
+    </div>
+  </li>
+  </ul>
+</div>
+
+
+</div>
+
+</ion-content>
+<div class="float-button" ui-sref="add-newemployee">
+    <span class="height-fix">
+        <a class="content">
+            <i class="fa fa-plus"> </i>
+        </a>
+    </span>
+</div>
+
+<div class="bar bar-footer">
+  <div >
+    <div >
+      <label for="" class="progress-label">40% Completed</label>
+    </div>
+  <progress value="40" max="100" class="progress">40%</progress>
+</div>
+<button  class="bottom-continue button button-clear pull-right submit-blue" ui-sref="check-in">Save</button>
+</div>
+</ion-view>

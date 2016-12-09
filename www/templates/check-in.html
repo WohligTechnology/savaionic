@@ -1,0 +1,33 @@
+<ion-view>
+    <div class="bar bar-header bar-light header-bottom ">
+        <h1 class="title login-bar"><img src="/img/back.png" alt="back"  class="back"/><span class="title-name">Check In</span>
+<img src="/img/forward.png" alt="forward" class="forward"/>
+
+</div>
+<ion-content  class="">
+  <div class="checkin-margin">
+    <div class="serach-name">
+      <h4 for="" >Mahesh Mauraya</h4>
+      <h5 for="">Branch</h4>
+    </div>
+<div ng-repeat="ch in checkin" class="branch-list">
+  <h5>{{ch.add}}</h5>
+  <h5>Branch Id:{{ch.branchid}}</h5>
+  <h5>{{ch.name}} </h5>
+  <i class="fa fa-chevron-right"></i>
+</div>
+
+  </div>
+</ion-content>
+
+
+<div class="bar bar-footer">
+  <div >
+    <div >
+      <label for="" class="progress-label">35% Completed</label>
+    </div>
+  <progress value="35" max="100" class="progress">35%</progress>
+</div>
+<button  class="bottom-continue button button-clear pull-right submit-blue" ui-sref="recent-checkin">Submit</button>
+</div>
+</ion-view>

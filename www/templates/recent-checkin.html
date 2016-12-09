@@ -1,0 +1,121 @@
+<ion-view>
+    <div class="bar bar-header bar-light header-bottom ">
+        <h1 class="title login-bar"><img src="/img/back.png" alt="back"  class="back"/><span class="title-name">Check In</span>
+<img src="/img/forward.png" alt="forward" class="forward"/>
+
+</div>
+<ion-content  class="recent-checkin">
+  <div class="clearfix">
+    <h4 for="" class="header-name pull-left">Mahesh Mauraya</h4>
+    <h5 for="" class="header-h5 pull-right">Check In</h4>
+  </div>
+
+
+<ion-slide-box on-slide-changed="slideHasChanged($index)" class="pageslider">
+  <ion-slide>
+    <div class="">
+      <h5 class="header-h5">Recent Check In Details</h5>
+      <div ng-repeat="ch1 in checkin | limitTo: 2" class=" checkin-list ">
+        <div class="item checkin-item">
+          <h5>{{ch1.add}}</h5>
+          <h5>Branch Id:{{ch1.branchid}}</h5>
+          <h5>{{ch1.name}} </h5>
+          <h5 class="checkin-end">Check In</h5>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <h5 class="header-h5">Near by Branches</h5>
+      <div ng-repeat="ch1 in checkin | limitTo: 2" class=" checkin-list ">
+        <div class="item checkin-item">
+          <h5>{{ch1.add}}</h5>
+          <h5>Branch Id:{{ch1.branchid}}</h5>
+          <h5>{{ch1.name}} </h5>
+          <h5 class="checkin-end">Check In</h5>
+        </div>
+      </div>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div class="">
+      <h5 class="header-h5">Recent Check In Details</h5>
+      <div ng-repeat="ch1 in checkin | limitTo: 2" class=" checkin-list ">
+        <div class="item checkin-item">
+          <h5>{{ch1.add}}</h5>
+          <h5>Branch Id:{{ch1.branchid}}</h5>
+          <h5>{{ch1.name}} </h5>
+          <h5 class="checkin-end">Check In</h5>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <h5 class="header-h5">Near by Branches</h5>
+      <div ng-repeat="ch1 in checkin | limitTo: 2" class=" checkin-list ">
+        <div class="item checkin-item">
+          <h5>{{ch1.add}}</h5>
+          <h5>Branch Id:{{ch1.branchid}}</h5>
+          <h5>{{ch1.name}} </h5>
+          <h5 class="checkin-end">Check In</h5>
+        </div>
+      </div>
+    </div>
+    </ion-slide>
+  <ion-slide>
+    <div class="">
+      <h5 class="header-h5" >Recent Check In Details</h5>
+      <div ng-repeat="ch1 in checkin | limitTo: 2" class=" checkin-list ">
+        <div class="item checkin-item">
+          <h5>{{ch1.add}}</h5>
+          <h5>Branch Id:{{ch1.branchid}}</h5>
+          <h5>{{ch1.name}} </h5>
+          <h5 class="checkin-end">Check In</h5>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <h5 class="header-h5">Near by Branches</h5>
+      <div ng-repeat="ch1 in checkin | limitTo: 2" class=" checkin-list ">
+        <div class="item checkin-item">
+          <h5>{{ch1.add}}</h5>
+          <h5>Branch Id:{{ch1.branchid}}</h5>
+          <h5>{{ch1.name}} </h5>
+          <h5 class="checkin-end">Check In</h5>
+        </div>
+      </div>
+    </div></ion-slide>
+</ion-slide-box>
+
+  <h5 class="header-h5">Access for the time duration:</h5>
+  <label class="item-input item-select select-regstration label-fromto">
+      <select class="registration-select sign-up-color">
+          <option value=""  disabled selected >From</option>
+        <option>Blue</option>
+        <option>Green</option>
+        <option>Red</option>
+      </select>
+    </label>
+    <label class="item-input item-select select-regstration label-fromto ">
+        <select class="registration-select sign-up-color">
+            <option value=""  disabled selected >To</option>
+          <option>Blue</option>
+          <option>Green</option>
+          <option>Red</option>
+        </select>
+      </label>
+
+
+    <button class="button button-block  button-light checkin-button sign-up" ui-sref="subscriber-business">
+      Sumbit</button>
+
+
+</ion-content>
+<div class="bar bar-footer">
+  <div >
+    <div >
+      <label for="" class="progress-label">35% Completed</label>
+    </div>
+  <progress value="35" max="100" class="progress">35%</progress>
+</div>
+<button  class="bottom-continue button button-clear pull-right submit-blue" ui-sref="checkin-duration">Submit</button>
+</div>
+</ion-view>

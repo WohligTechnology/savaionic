@@ -1,0 +1,49 @@
+<ion-view title="Business Details">
+  <div class="bar bar-header bar-light header-bottom ">
+<h1 class="title login-bar"><img src="/img/back.png" alt="back"  class="back"/><span class="title-name">Preview Business Detail</span>
+<img src="/img/forward.png" alt="forward" class="forward"/>
+<!-- <i class="fa fa-search forward"></i></h1> -->
+</div>
+<div class="header-map">
+  <img src="/img/map.png" alt="" class="map-preview" />
+  <button  class="button button-positive circle pull-right" ui-sref="preview-businessdetail"><i class="fa fa-pencil"></i></button>
+
+</div>
+    <ion-content >
+<form class=" business-details " ng-model="previewDetail">
+  <div class="preview-bottom preview-business">
+  <i class="fa fa-building"></i><input type="text" placeholder="Business Name" class="bottom-disabled"></input>
+</div>
+<div class="preview-bottom preview-business">
+<i class="fa fa-map-marker"></i><input type="text" placeholder="Business Address" class="bottom-disabled"></input>
+</div>
+<div class="preview-bottom preview-business">
+  <i class="fa fa-phone"></i><input type="text" placeholder="Comapany Name" class="bottom-disabled"></input>
+</div>
+  <div class="preview-bottom preview-business">
+  <i class="fa fa-briefcase"></i><input type="text" placeholder="Business Type" class="bottom-disabled"></input>
+</div>
+ <div class="preview-bottom preview-business">
+  <i class="fa fa-registered"></i><input type="text" placeholder="Registration Authority" class="bottom-disabled"></input>
+</div>
+<div class="preview-bottom preview-business">
+<i class="fa fa-newspaper-o"></i><input type="text" placeholder="VAT Registration Number" class="bottom-disabled"></input>
+</div>
+<div>
+  <label class="item-input item-select select-regstration sign-up-margin num-branch preview-business">
+        <i class="fa fa-list icon-user sign-up-color"> </i>
+      <select class="registration-select sign-up-color ">
+          <option value=""  disabled selected >Select Number of Branch</option>
+        <option>Blue</option>
+        <option>Green</option>
+        <option>Red</option>
+      </select>
+    </label>
+  </div>
+  <!-- <button class="button button-block  button-light continue sign-up" ui-sref="branch-registration">
+    Submit</button> -->
+
+</form>
+    </ion-content>
+
+   </ion-view>

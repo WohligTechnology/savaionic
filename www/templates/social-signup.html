@@ -1,0 +1,47 @@
+<ion-view >
+  <div class="bar bar-header bar-light header-bottom ">
+<h1 class="title login-bar"><img src="/img/back.png" alt="back" / class="back"><span class="title-name">Sign Up</span></h1>
+</div>
+    <ion-content >
+
+<form class="form-margin">
+
+<div class="margin-bottom">
+  <i class="fa fa-mobile icon-phone sign-up-color"> </i>
+<input type='number' placeholder="+44" class="country-code" >
+<input type='number' placeholder="mobile number" class="mobile-number">
+  </div>
+
+
+<!-- <input type='text' placeholder="Type of Registration" class=" item-select" > -->
+<!-- <label class=" item-input item-select select-regstration" >
+</label> -->
+<label class="item-input item-select select-regstration bottom-iagree">
+  <!-- <div class="input-label"> -->
+      <i class="fa fa-users icon-user sign-up-color"> </i>
+    <!-- </div> -->
+
+    <select class="registration-select sign-up-color">
+        <option value=""  disabled selected >Type of Registration</option>
+      <option>Blue</option>
+      <option>Green</option>
+      <option>Red</option>
+    </select>
+  </label>
+  <div class="bottom-iagree i-agree-checkbox">
+
+          <input type='checkbox' >
+
+          <label for="" class="i-agree sign-up-color login-text">I agree to the Sava <a href="#" class="checkbox-link"  style="text-decoration: none;">Terms and Conditions</a> and <a href="#" class="checkbox-link"  style="text-decoration: none;">privacy Policy</a></label>
+  </div>
+
+  <button class="button button-block  button-light button-margin sign-up" ui-sref="mobile-verification">
+      Sign Up</button>
+      <div class="margin-bottom">
+        <span for="" class="sign-up-color login-text">Already a member ?<a class="button button-clear button-positive sign-in-button login-text" ui-sref="welcome-backlogin">Sign In</a></span>
+      </div>
+
+</form>
+
+    </ion-content>
+</ion-view>

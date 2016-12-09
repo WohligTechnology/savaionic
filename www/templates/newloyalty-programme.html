@@ -1,0 +1,93 @@
+<ion-view>
+    <div class="bar bar-header bar-light header-bottom ">
+        <h1 class="title login-bar"><img src="/img/back.png" alt="back"  class="back"/><span class="title-name">New Loyalty Programme</span>
+<img src="/img/forward.png" alt="forward" class="forward"/>
+
+</div>
+
+<ion-content  >
+  <form class="loyalty-margin">
+    <div class=" sign-up-margin address-margin program-name">
+
+    <input type="text" placeholder="Programme Name"  class="registration-select address">
+    </div>
+    <div class=" business-program">
+
+    <label class="registration-select address">
+      Business Programme <i class="fa fa-info-circle pull-right "></i>
+    </label>
+    </div>
+<div class="radio-color">
+  <input type='radio' name='group'  /> Single Business Program
+</div>
+<div class="radio-color">
+  <input type='radio' name='group'  /> Coalition Program
+</div>
+    <div class=" business-program">
+    <label class="registration-select address">
+    What do you want to issue: <i class="fa fa-info-circle pull-right "></i>
+    </label>
+    </div>
+<div class="radio-color">
+  <input type='radio' name='group1'   /> Loyalty points
+
+</div>
+<div class="radio-color">
+  <input type='radio' name='group1'   /> Loyalty card with stamps
+
+</div>
+
+<div class=" business-program">
+<label class="registration-select address">
+Set point conversion/Rate :<i class="fa fa-info-circle pull-right "></i>
+</label>
+</div>
+<div class="points-conversion">
+
+<input type="text" placeholder="Points(500 points)"  class="points">
+
+    <label class="item-input item-select select-regstration  currency">
+        <select class="registration-select sign-up-color">
+            <option value=""  disabled selected >Currency</option>
+          <option>Blue</option>
+          <option>Green</option>
+          <option>Red</option>
+        </select>
+      </label>
+
+
+<input type="text" placeholder="Rate (€1)"  class=" rate">
+</div>
+
+  <div class=" business-program">
+  <label class="registration-select address">
+  Generate Points:<i class="fa fa-info-circle pull-right "></i>
+  </label>
+  </div>
+  <div class=" sign-up-margin address-margin program-name">
+
+  <input type="text" placeholder="Total Points(500 points)"  class="registration-select address">
+  </div>
+       <div class=" business-program">
+  <label class="registration-select address">
+  Generate Stamps:<i class="fa fa-info-circle pull-right "></i>
+  </label>
+  </div>
+  <div class=" sign-up-margin address-margin program-name">
+
+  <input type="text" placeholder="Total Points(500 points)"  class="registration-select address">
+  </div>
+  <button class="button button-block  button-light continue sign-up" ui-sref="summary">
+    Sumbit</button>
+</form>
+</ion-content>
+<div class="bar bar-footer">
+  <div >
+    <div >
+      <label for="" class="progress-label">65% Completed</label>
+    </div>
+  <progress value="65" max="100" class="progress">65%</progress>
+</div>
+<button  class="bottom-continue button button-clear pull-right submit-blue" ui-sref="summary">Submit</button>
+</div>
+</ion-view>

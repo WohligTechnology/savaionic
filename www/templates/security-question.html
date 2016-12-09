@@ -1,0 +1,42 @@
+<ion-view >
+  <div class="bar bar-header bar-light header-bottom ">
+<h1 class="title login-bar"><img src="/img/back.png" alt="back"  class="back"/><span class="title-name">Personal Detail</span>
+<!-- <img src="/img/forward.png" alt="forward" class="forward"/> -->
+<i class="fa fa-search forward"></i></h1>
+</div>
+    <ion-content >
+<form class=" question " >
+
+
+  <span for="Question" class="margin-building"><i class="fa fa-question-circle-o ">
+    <label for="address">Security Question</label></i></span>
+<label class="item-input item-select select-regstration sign-up-margin address-margin address">
+    <select class="registration-select sign-up-color address">
+        <option value=""  disabled selected >Question</option>
+      <option>Blue</option>
+      <option>Green</option>
+      <option>Red</option>
+    </select>
+  </label>
+  <div class=" sign-up-margin address-margin">
+
+  <input type="text" placeholder="Answer"  class="registration-select address">
+  </div>
+
+
+
+    <button class="button button-block  button-light continue sign-up" ui-sref="preview-personaldetail">
+      Continue</button>
+
+    </form>
+         </ion-content>
+         <div class="bar bar-footer ">
+           <div >
+             <div >
+               <label for="" class="progress-label">25% Completed  </label>
+             </div>
+           <progress value="25" max="100" class="progress">25%</progress>
+         </div>
+         <button  class="bottom-continue button button-clear pull-right" ui-sref="preview-personaldetail">Continue</button>
+         </div>
+        </ion-view>

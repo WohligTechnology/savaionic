@@ -1,0 +1,77 @@
+<div class="bar bar-header bar-light header-bottom ">
+    <h1 class="title login-bar"><img src="/img/back.png" alt="back"  class="back"/><span class="title-name">Add New Employees</span>
+<img src="/img/forward.png" alt="forward" class="forward"/>
+
+</div>
+<ion-content  >
+  <form class="form-margin">
+    <div class="text-center">
+      <i class="fa fa-circle circle-img"> </i>
+<i class="fa fa-user user-img"></i>
+<i class="fa fa-plus add-user plus-top"></i>
+    </div>
+    <div class="add-emp">
+      <div class="item input-emp">
+        <i class="fa fa-user  icon-user icon-emp "> </i>
+      <input type="text" placeholder="First Name"  class="registration-select">
+    </div>
+    <div class=" item input-emp">
+
+      <i class="fa fa-user  icon-user  icon-emp"> </i>
+    <input type="text" placeholder="Last Name"  class="registration-select">
+  </div>
+    <div class=" item input-emp">
+
+      <i class="fa fa-mobile  icon-phone icon-emp "> </i>
+    <input type="text" placeholder="Mobile Number"  class="registration-select" ng-model="formData.otp">
+  </div>
+    <div class=" item input-emp">
+
+      <i class="fa fa-envelope  icon-user icon-emp"> </i>
+    <input type="text" placeholder="Mail Id"  class="registration-select">
+  </div>
+    <div class=" item input-emp">
+
+      <i class="fa fa-newspaper-o  icon-user icon-emp "> </i>
+    <input type="text" placeholder="Employee ID"  class="registration-select">
+  </div>
+  <label class="item-input item-select select-regstration input-emp">
+    <!-- <div class="input-label"> -->
+        <i class="fa fa-user-plus icon-user icon-emp"> </i>
+      <!-- </div> -->
+
+      <select class="registration-select icon-emp ">
+          <option value=""  disabled selected >Select Role</option>
+        <option>Blue</option>
+        <option>Green</option>
+        <option>Red</option>
+      </select>
+    </label><label class="item-input item-select select-regstration  input-emp">
+      <!-- <div class="input-label"> -->
+          <i class="fa fa-building icon-user icon-emp"> </i>
+        <!-- </div> -->
+
+        <select class="registration-select icon-emp">
+            <option value=""  disabled selected >Select Branch</option>
+          <option>Blue</option>
+          <option>Green</option>
+          <option>Red</option>
+        </select>
+      </label>
+    </div>
+
+    <button class="button button-block  button-light continue sign-up" ui-sref="branch-registration">
+      Save</button>
+</form>
+</ion-content>
+
+<div class="bar bar-footer">
+  <div >
+    <div >
+      <label for="" class="progress-label">40% Completed</label>
+    </div>
+  <progress value="40" max="100" class="progress">40%</progress>
+</div>
+<button  class="bottom-continue button button-clear pull-right submit-blue" ui-sref="review-branchdetail">Save</button>
+</div>
+</ion-view>
