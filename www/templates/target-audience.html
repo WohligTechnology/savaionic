@@ -5,61 +5,293 @@
 </div>
 
 <ion-content  >
-  <div class="bottom-iagree i-agree-checkbox custom-checkbox ">
-          <input type='checkbox' id="accept">
-          <label for="accept" class="i-agree sign-up-color login-text">All</label>
+  <div class="">
+    <div class="card">
+      <div class="item item-divider target-margin">
+        <div class="bottom-iagree i-agree-checkbox custom-checkbox target-inside">
+              <input type='checkbox' id="All" ng-model="All">
+              <label for="All" class="i-agree sign-up-color login-text">All</label>
+      </div>
+        </div>
+    </div>
+
+    <div class="card">
+
+      <div class="item item-divider target-margin">
+        <div class="bottom-iagree i-agree-checkbox custom-checkbox target-inside">
+              <input type='checkbox' id="Location" ng-model="Location">
+              <label for="Location" class="i-agree sign-up-color login-text">Location</label>
+      </div>
+        </div>
+    <div class="item target-card" ng-show="Location">
+      <label class="item item-input">
+         <span class="input-label target-label">From Home</span>
+         <input type="text" placeholder="18 mile">
+       </label>
+       </div>
   </div>
-  <div class="bottom-iagree i-agree-checkbox custom-checkbox ">
-          <input type='checkbox' id="accept">
-          <label for="accept" class="i-agree sign-up-color login-text">Location</label>
+  <div class="card">
+
+    <div class="item item-divider target-margin">
+      <div class="bottom-iagree i-agree-checkbox custom-checkbox target-inside">
+            <input type='checkbox' id="Age" ng-model="Age">
+            <label for="Age" class="i-agree sign-up-color login-text">Age</label>
+    </div>
+      </div>
+  <div class="item target-card" ng-show="Age">
+    <label class="item item-input">
+       <span class="input-label target-label">Greater than</span>
+       <input type="number" placeholder="18">
+     </label>
+     <div class="">
+       <span class="input-label target-label">Between</span>
+
+       <label class="item-input item-select select-regstration sign-up-margin from-to">
+           <select class="registration-select sign-up-color">
+               <option value=""  disabled selected >from</option>
+             <option>Blue</option>
+             <option>Green</option>
+             <option>Red</option>
+           </select>
+         </label>
+         <label class="item-input item-select select-regstration sign-up-margin from-to ">
+             <select class="registration-select sign-up-color">
+                 <option value=""  disabled selected >To</option>
+               <option>Blue</option>
+               <option>Green</option>
+               <option>Red</option>
+             </select>
+           </label>
+     </div>
+     </div>
   </div>
-  <div class="bottom-iagree i-agree-checkbox custom-checkbox ">
-          <input type='checkbox' id="accept">
-          <label for="accept" class="i-agree sign-up-color login-text">Age</label>
+  <div class="card">
+
+    <div class="item item-divider target-margin">
+      <div class="bottom-iagree i-agree-checkbox custom-checkbox target-inside">
+            <input type='checkbox' id="balance" ng-model="balance">
+            <label for="balance" class="i-agree sign-up-color login-text">Available balance</label>
+    </div>
+      </div>
+  <div class="item target-card" ng-show="balance">
+    <label class="item item-input">
+       <span class="input-label target-label">Min balance</span>
+       <input type="number" placeholder="100 points">
+     </label>
+     </div>
   </div>
-  <div class="bottom-iagree i-agree-checkbox custom-checkbox ">
-          <input type='checkbox' id="accept">
-          <label for="accept" class="i-agree sign-up-color login-text">Available balance</label>
+  <div class="card">
+
+    <div class="item item-divider target-margin">
+      <div class="bottom-iagree i-agree-checkbox custom-checkbox target-inside">
+            <input type='checkbox' id="Activity" ng-model="Activity">
+            <label for="Activity" class="i-agree sign-up-color login-text">Last Activity</label>
+    </div>
+      </div>
+  <div class="item target-card"  ng-show="Activity">
+    <label class="item item-input">
+       <span class="input-label target-label">Last Acitivity min</span>
+       <input type="text" placeholder="8 Hrs">
+     </label>
+     </div>
   </div>
-   <div class="bottom-iagree i-agree-checkbox custom-checkbox ">
-          <input type='checkbox' id="accept">
-          <label for="accept" class="i-agree sign-up-color login-text">Last Activity</label>
+  <div class="card">
+
+    <div class="item item-divider target-margin">
+      <div class="bottom-iagree i-agree-checkbox custom-checkbox target-inside">
+            <input type='checkbox' id="Sex" ng-model="Sex">
+            <label for="Sex" class="i-agree sign-up-color login-text">Sex</label>
+    </div>
+      </div>
+  <div class="item target-card" ng-show="Sex">
+    <label class="item item-input">
+       <label class="input-label gender target-label">Sex</label>
+       <div class="radio-color gender">
+         <input type='radio' name='group1'/> Male
+          <input type='radio' name='group1'/> Female
+       </div>
+
+        </label>
+     </div>
   </div>
-  <div class="bottom-iagree i-agree-checkbox custom-checkbox ">
-          <input type='checkbox' id="accept">
-          <label for="accept" class="i-agree sign-up-color login-text">Sex</label>
+
+  <div class="card">
+  <div class="item item-divider target-margin">
+    <div class="bottom-iagree i-agree-checkbox custom-checkbox target-inside">
+          <input type='checkbox' id="Points" ng-model="Points">
+          <label for="Points" class="i-agree sign-up-color login-text">LifeTime Points Earned</label>
   </div>
-  <div class="bottom-iagree i-agree-checkbox custom-checkbox ">
-          <input type='checkbox' id="accept">
-          <label for="accept" class="i-agree sign-up-color login-text">LifeTime Points Earned</label>
+    </div>
+  <div class="item target-card"  ng-show="Points">
+    <label class=" item-input ">
+       <span class="input-label target-label">LifeTime Points Earned</span>
+       <input type="text" placeholder="8 Hrs">
+     </label>
   </div>
-  <div class="bottom-iagree i-agree-checkbox custom-checkbox ">
-          <input type='checkbox' id="accept">
-          <label for="accept" class="i-agree sign-up-color login-text">Birthday</label>
   </div>
-    <div class="bottom-iagree i-agree-checkbox custom-checkbox ">
-          <input type='checkbox' id="accept">
-          <label for="accept" class="i-agree sign-up-color login-text">Anniversary Date</label>
-  </div> 
-   <div class="bottom-iagree i-agree-checkbox custom-checkbox ">
-          <input type='checkbox' id="accept">
-          <label for="accept" class="i-agree sign-up-color login-text">Childern Age</label>
+
+
+    <div class="card">
+
+      <div class="item item-divider target-margin">
+        <div class="bottom-iagree i-agree-checkbox custom-checkbox target-inside">
+              <input type='checkbox' id="Birthday" ng-model="Birthday">
+              <label for="Birthday" class="i-agree sign-up-color login-text">Birthday</label>
+      </div>
+
+        </div>
+    <div class="item target-card" ng-show="Birthday">
+
+       <div class="">
+         <span class="input-label target-label">Birthday</span>
+
+         <label class="item-input item-select select-regstration sign-up-margin from-to">
+             <select class="registration-select sign-up-color">
+                 <option value=""  disabled selected >from</option>
+               <option>Blue</option>
+               <option>Green</option>
+               <option>Red</option>
+             </select>
+           </label>
+           <label class="item-input item-select select-regstration sign-up-margin from-to ">
+               <select class="registration-select sign-up-color">
+                   <option value=""  disabled selected >To</option>
+                 <option>Blue</option>
+                 <option>Green</option>
+                 <option>Red</option>
+               </select>
+             </label>
+       </div>
+       </div>
+    </div>
+    <div class="card">
+
+      <div class="item item-divider target-margin">
+        <div class="bottom-iagree i-agree-checkbox custom-checkbox target-inside">
+              <input type='checkbox' id="Anniversary" ng-model="Anniversary">
+              <label for="Anniversary" class="i-agree sign-up-color login-text">Anniversary Date</label>
+      </div>
+
+        </div>
+    <div class="item target-card" ng-show="Anniversary">
+
+       <div class="">
+         <span class="input-label target-label">Anniversary Date</span>
+
+         <label class="item-input item-select select-regstration sign-up-margin from-to">
+             <select class="registration-select sign-up-color">
+                 <option value=""  disabled selected >from</option>
+               <option>Blue</option>
+               <option>Green</option>
+               <option>Red</option>
+             </select>
+           </label>
+           <label class="item-input item-select select-regstration sign-up-margin from-to ">
+               <select class="registration-select sign-up-color">
+                   <option value=""  disabled selected >To</option>
+                 <option>Blue</option>
+                 <option>Green</option>
+                 <option>Red</option>
+               </select>
+             </label>
+       </div>
+       </div>
+    </div>
+    <div class="card">
+
+      <div class="item item-divider target-margin">
+        <div class="bottom-iagree i-agree-checkbox custom-checkbox target-inside">
+              <input type='checkbox' id="Childern" ng-model="Childern">
+              <label for="Childern" class="i-agree sign-up-color login-text">Childern Age Range</label>
+      </div>
+
+        </div>
+    <div class="item target-card" ng-show="Childern">
+
+       <div class="">
+         <span class="input-label target-label">Childern Age</span>
+
+         <label class="item-input item-select select-regstration sign-up-margin from-to">
+             <select class="registration-select sign-up-color">
+                 <option value=""  disabled selected >from</option>
+               <option>Blue</option>
+               <option>Green</option>
+               <option>Red</option>
+             </select>
+           </label>
+           <label class="item-input item-select select-regstration sign-up-margin from-to ">
+               <select class="registration-select sign-up-color">
+                   <option value=""  disabled selected >To</option>
+                 <option>Blue</option>
+                 <option>Green</option>
+                 <option>Red</option>
+               </select>
+             </label>
+       </div>
+       </div>
+    </div>
+
+    <div class="card">
+    <div class="item item-divider target-margin">
+      <div class="bottom-iagree i-agree-checkbox custom-checkbox target-inside">
+            <input type='checkbox' id="Nationality" ng-model="Nationality">
+            <label for="Nationality" class="i-agree sign-up-color login-text">Nationality</label>
+    </div>
+      </div>
+    <div class="item target-card"  ng-show="Nationality">
+      <label class=" item-input ">
+         <span class="input-label target-label">Nationality</span>
+         <input type="text" placeholder="UK">
+       </label>
+    </div>
+    </div>
+
+    <div class="card">
+    <div class="item item-divider target-margin">
+      <div class="bottom-iagree i-agree-checkbox custom-checkbox target-inside">
+            <input type='checkbox' id="Visited" ng-model="Visited">
+            <label for="Visited" class="i-agree sign-up-color login-text">Most Visited Branch</label>
+    </div>
+      </div>
+    <div class="item target-card"  ng-show="Visited">
+      <label class=" item-input ">
+         <span class="input-label target-label">Most Visited Branch</span>
+         <input type="text" placeholder="Branch">
+       </label>
+    </div>
+    </div>
+    <div class="card">
+    <div class="item item-divider target-margin">
+      <div class="bottom-iagree i-agree-checkbox custom-checkbox target-inside">
+            <input type='checkbox' id="visits" ng-model="visits">
+            <label for="visits" class="i-agree sign-up-color login-text">NO. visits in Last 3 months</label>
+    </div>
+      </div>
+    <div class="item target-card"  ng-show="visits">
+      <label class=" item-input ">
+         <span class="input-label target-label">NO. visits in Last 3 months</span>
+         <input type="number" placeholder="2">
+       </label>
+    </div>
+    </div>
+    <div class="card">
+    <div class="item item-divider target-margin">
+      <div class="bottom-iagree i-agree-checkbox custom-checkbox target-inside">
+            <input type='checkbox' id="City" ng-model="City">
+            <label for="City" class="i-agree sign-up-color login-text">City</label>
+    </div>
+      </div>
+    <div class="item target-card"  ng-show="City">
+      <label class=" item-input ">
+         <span class="input-label target-label">City</span>
+         <input type="text" placeholder="City">
+       </label>
+    </div>
+    </div>
+
   </div>
-    <div class="bottom-iagree i-agree-checkbox custom-checkbox ">
-          <input type='checkbox' id="accept">
-          <label for="accept" class="i-agree sign-up-color login-text">Nationality</label>
-  </div>
-    <div class="bottom-iagree i-agree-checkbox custom-checkbox ">
-          <input type='checkbox' id="accept">
-          <label for="accept" class="i-agree sign-up-color login-text">Most Visited Branch</label>
-  </div>
-   <div class="bottom-iagree i-agree-checkbox custom-checkbox ">
-          <input type='checkbox' id="accept">
-          <label for="accept" class="i-agree sign-up-color login-text">NO</label>
-  </div>
-   <div class="bottom-iagree i-agree-checkbox custom-checkbox ">
-          <input type='checkbox' id="accept">
-          <label for="accept" class="i-agree sign-up-color login-text">Most Visited Branch</label>
-  </div>
-    </ion-content>+
+  <button class="button button-block  button-light sign-up target-button" ui-sref="mobile-verification">
+      Submit</button>
+
+    </ion-content>
 </ion-view>

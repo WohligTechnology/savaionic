@@ -775,10 +775,13 @@ margin: 10px;
     border-radius: 10px;
   }
 }
+.target-button{
+  margin: 20px!important;
+}
 .branch-detailtext{
   display: inline-block;
   line-height: 1;
-  min-width: 75%;
+  min-width: 65%;
   margin-bottom: 15px;
   margin-left: 10px;
   border-bottom: 1px solid #B6B6B6;
@@ -1503,4 +1506,40 @@ display: inline-flex;
 }
 .icon-ph{
   font-size: 25px;
+}
+#floating-menu li span.label{
+  color: white;
+  background-color: $orange;
+}
+#floating-menu li.menu-button {
+  background: $orange!important;
+}
+.gender{
+  display: inline-block;;
+}
+.target-label{
+  width: 55%;
+  font-size: 12px;
+}
+.target-card{
+  padding: 5px;
+  label{
+    padding-left: 0px;
+  }
+}
+.target-margin{
+  padding: 5px 5px 5px 0px;
+  height: 37px;
+  .target-inside{
+    margin-left: 0px;
+  }
+}
+.target{
+  .card{
+    margin: 0px 20px;
+  }
+}
+.target-submit{
+  margin: 10px;
+  width: 90%;
 }

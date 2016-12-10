@@ -81,16 +81,7 @@
       </ion-tab>
         <ion-tab title="promotions">
         <ion-content  class="tab-content ">
-            <div class="">
-                <div class="promo">
-                <h4 for="">Loyalty Redeemption offer</h4>
-                <i class= "fa fa-gift "></i>
-            </div>
-            <div class="promo">
-                <h4 for="">Promotional offer</h4>
-                <i class= "fa fa-gift "></i>
-            </div>
-          </div>
+
       </ion-content >
 
       </ion-tab>
@@ -98,12 +89,11 @@
 
 
 </ion-content>
-<ion-floating-menu>
-    <ion-floating-item  click="myEvent()"><h4 for="">Loyalty Redeemption offer</h4>
-    <i class= "fa fa-gift "></i></ion-floating-item>
-    <ion-floating-item  click="myEvent()"><h4 for="">Loyalty Redeemption offer</h4>
-    <i class= "fa fa-gift "></i></ion-floating-item>
+<ion-floating-menu >
+    <ion-floating-item  click="myEvent()" ui-sref="app.create-offer" icon="fa fa-gift" text="Loyalty Redeemption offer" button-color="#e74b1a"></ion-floating-item>
+    <ion-floating-item  click="myEvent()"  icon="fa fa-gift" text="Promotional offer" button-color="#e74b1a"></ion-floating-item>
 </ion-floating-menu>
+
 
 <!-- <div class="bar bar-footer">
 <div >

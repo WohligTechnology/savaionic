@@ -12647,10 +12647,13 @@ input[type='date'] {
   width: 70px;
   border-radius: 10px; }
 
+.target-button {
+  margin: 20px !important; }
+
 .branch-detailtext {
   display: inline-block;
   line-height: 1;
-  min-width: 75%;
+  min-width: 65%;
   margin-bottom: 15px;
   margin-left: 10px;
   border-bottom: 1px solid #B6B6B6; }
@@ -13271,3 +13274,35 @@ input[type='date'] {
 
 .icon-ph {
   font-size: 25px; }
+
+#floating-menu li span.label {
+  color: white;
+  background-color: #e74b1a; }
+
+#floating-menu li.menu-button {
+  background: #e74b1a !important; }
+
+.gender {
+  display: inline-block; }
+
+.target-label {
+  width: 55%;
+  font-size: 12px; }
+
+.target-card {
+  padding: 5px; }
+  .target-card label {
+    padding-left: 0px; }
+
+.target-margin {
+  padding: 5px 5px 5px 0px;
+  height: 37px; }
+  .target-margin .target-inside {
+    margin-left: 0px; }
+
+.target .card {
+  margin: 0px 20px; }
+
+.target-submit {
+  margin: 10px;
+  width: 90%; }
