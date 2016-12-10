@@ -13305,4 +13305,4 @@ input[type='date'] {
 
 .target-submit {
   margin: 10px;
-  width: 90%; }
+  width: 90% !important; }
