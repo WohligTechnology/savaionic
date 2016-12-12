@@ -1,16 +1,16 @@
-<ion-view>
+<ion-view title="Employees">
     <div class="bar bar-header bar-light header-bottom ">
-        <h1 class="title login-bar"><img src="/img/back.png" alt="back"  class="back"/><span class="title-name">Add Employees to Branch</span>
+        <h1 class="title login-bar"><img src="/img/back.png" alt="back"  class="back" ng-click="goBackHandler();"/><span class="title-name">Add Employees to Branch</span>
 <img src="/img/forward.png" alt="forward" class="forward"/>
 
 </div>
-<ion-content  class="form-margin">
+<ion-content  >
 
 <div class="add-emp">
-<input type="text" ng-model="searchtext" placeholder="Search By Name" ng-click="listItem = !listItem"><i class="fa fa-search"></i>
+<input type="text" ng-model="searchtext" placeholder="Search By Name" ng-click="listItem = !listItem"><i class="fa fa-search" ng-click="listItem = !listItem"></i>
 	<ul class="item item-emp" ng-show="listItem">
   <li ng-repeat="emp in employees | filter: searchtext">
-    <div class="emp-dropdown">
+    <div class="emp-dropdown" ui-sref="app.employee-detail">
       <img ng-src="{{emp.image}}" alt="{{emp.name}}" class= ""/>
       <div class="empdropdown-detail">
         <h4>{{emp.name}}</h4>
@@ -21,6 +21,7 @@
   </li>
 	</ul>
 </div>
+
 </ion-content>
 <div class="float-button" ui-sref="add-newemployee">
     <span class="height-fix">
@@ -30,7 +31,7 @@
     </span>
 </div>
 
-<div class="bar bar-footer">
+<!-- <div class="bar bar-footer">
   <div >
     <div >
       <label for="" class="progress-label">65% Completed</label>
@@ -38,5 +39,5 @@
   <progress value="65" max="100" class="progress">65%</progress>
 </div>
 <button  class="bottom-continue button button-clear pull-right submit-blue" ui-sref="branch-employee">Save</button>
-</div>
+</div> -->
 </ion-view>

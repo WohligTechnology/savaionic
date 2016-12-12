@@ -52,13 +52,28 @@ angular.module('starter.controllers', [])
   ];
 })
 .controller('LoginCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('EmployeeDetailCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('AppPersonalCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('CheckINAppCtrl', function($scope) {
   $scope.checkin = [{
@@ -78,45 +93,116 @@ angular.module('starter.controllers', [])
     branchid: 1024,
     name: "123 Center one shopping Center"
   }];
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('AppBusinessCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('AppSummaryCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('DistributionCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('AllOfferCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('CreateOfferCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('NewCriteriaCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('AppBranchCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('VerificationCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('TargetAudienceCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('LoyaltyProgrammeCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('NewLoyaltyProgrammeCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('SummaryCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('LoyaltyCardCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('BranchEmployeeCtrl', function($scope) {
   $scope.employees = [{
@@ -140,6 +226,12 @@ angular.module('starter.controllers', [])
     position: "4",
     image: "img/burgerking.jpg"
   }];
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('BranchEmployeeDetailCtrl', function($scope) {
   $scope.employees = [{
@@ -167,6 +259,12 @@ angular.module('starter.controllers', [])
     image: "img/burgerking.jpg",
     status:"inactive"
   }];
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('AddEmployeeCtrl', function($scope) {
 
@@ -191,10 +289,29 @@ angular.module('starter.controllers', [])
     position: "4",
     image: "img/burgerking.jpg"
   }];
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 
 })
 .controller('AddNewEmployeeCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
+})
+.controller('AppLoyaltyCtrl', function($scope) {
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('CheckInCtrl', function($scope) {
   $scope.checkin = [{
@@ -214,9 +331,20 @@ angular.module('starter.controllers', [])
     branchid: 1024,
     name: "123 Center one shopping Center"
   }];
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('SocialSignupCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 
 })
 .controller('RecentCheckinCtrl', function($scope) {
@@ -237,55 +365,148 @@ angular.module('starter.controllers', [])
     branchid: 1024,
     name: "123 Center one shopping Center"
   }];
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('WelcomeBackLoginCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('SignupCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('AddressCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('SecurityQuestionCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('BusinessRegistrationCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('BusinessAddressCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('BranchRegistrationCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('PreviewBuisnessDetailCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('PreviewBranchDetailCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('ReviewBranchDetailCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
+})
+.controller('BusinessListCtrl', function($scope) {
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('BranchAddressCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('SuccessCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('CheckinDurationCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('SubscriberBusinessCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('RequestedCardPointsCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('SubscriberRequestedCtrl', function($scope) {
-
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 .controller('PreviewPersonalDetailCtrl', function($scope) {
 $scope.previewDetail = {};
@@ -325,7 +546,19 @@ console.log($scope.previewDetail.persoanlInfo);
   $scope.openDatePicker = function(){
     ionicDatePicker.openDatePicker(ipObj1);
   };
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 });

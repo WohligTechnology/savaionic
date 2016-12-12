@@ -1,6 +1,6 @@
 <ion-view title="All Offer">
     <div class="bar bar-header bar-light header-bottom ">
-        <h1 class="title login-bar"><img src="/img/back.png" alt="back"  class="back"/><span class="title-name">Subscriber Requested</span>
+        <h1 class="title login-bar"><img src="/img/back.png" alt="back"  class="back" ng-click="goBackHandler();"/><span class="title-name">Subscriber Requested</span>
 <!-- <img src="/img/forward.png" alt="forward" class="forward"/> -->
 <i class="fa fa-search forward"></i></h1>
 
@@ -90,8 +90,9 @@
 
 </ion-content>
 <ion-floating-menu >
+    <ion-floating-item  click="myEvent()"  ui-sref="app.create-offer" icon="fa fa-gift" text="Promotional offer" button-color="#e74b1a"></ion-floating-item>
     <ion-floating-item  click="myEvent()" ui-sref="app.create-offer" icon="fa fa-gift" text="Loyalty Redeemption offer" button-color="#e74b1a"></ion-floating-item>
-    <ion-floating-item  click="myEvent()"  icon="fa fa-gift" text="Promotional offer" button-color="#e74b1a"></ion-floating-item>
+
 </ion-floating-menu>
 
 

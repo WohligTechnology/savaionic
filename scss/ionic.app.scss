@@ -190,7 +190,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   .forward{
     margin-right: 10px;
     float: right;
-    margin-top: 10px;
+    margin-top: 7px;
     display: inline-block;
   }
   .title-name {
@@ -1069,7 +1069,7 @@ color: #9C9C9C;
 }
 .add-emp{
   input{
-    width: 90%;
+    width: 89%;
   }
 }
 .emp-dropdown{
@@ -1539,7 +1539,23 @@ display: inline-flex;
     margin: 0px 20px;
   }
 }
-.target-submit{
-  margin: 10px;
-  width: 90%!important;
+.target-icon{
+  font-size: 20px;
+  color: #b6b6b6;
+}
+.loyalty-list{
+  li{
+    .header{
+      display: inline-block;
+      h3{
+        color: #88CEC7;
+      }
+      h4{
+        color: #b6b6b6;
+      }
+    }
+    i{
+      color: #88CEC7;
+    }
+  }
 }

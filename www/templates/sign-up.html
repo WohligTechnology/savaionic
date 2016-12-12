@@ -1,6 +1,6 @@
 <ion-view >
   <div class="bar bar-header bar-light header-bottom ">
-<h1 class="title login-bar"><img src="/img/back.png" alt="back" / class="back"><span class="title-name">Sign Up</span></h1>
+<h1 class="title login-bar"><img src="/img/back.png" alt="back" / class="back" ng-click="goBackHandler();"><span class="title-name">Sign Up</span></h1>
 </div>
     <ion-content >
 
@@ -28,9 +28,9 @@
 
     <select class="registration-select sign-up-color">
         <option value=""  disabled selected >Type of Registration</option>
-      <option>Blue</option>
-      <option>Green</option>
-      <option>Red</option>
+      <option>Owner</option>
+      <option>Manager</option>
+      <option>Employee</option>
     </select>
   </label>
   <div class=" enter-otp">

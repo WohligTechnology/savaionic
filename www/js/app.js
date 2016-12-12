@@ -66,6 +66,16 @@ var firstapp=angular.module('starter', ['ionic', 'starter.controllers','ionic-da
       }
     }
   })
+  .state('app.business-list', {
+    url: '/business-list',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/business-list.html',
+        controller: 'BusinessListCtrl'
+
+      }
+    }
+  })
   .state('app.employee-detail', {
     url: '/employee-detail',
     views: {
@@ -135,15 +145,21 @@ var firstapp=angular.module('starter', ['ionic', 'starter.controllers','ionic-da
       }
     }
   })
-     .state('app.target-audience', {
-    url: '/target-audience',
+    .state('app.app-loyalty', {
+    url: '/app-loyalty',
     views: {
       'menuContent': {
-        templateUrl: 'templates/target-audience.html',
-        controller: 'TargetAudienceCtrl'
+        templateUrl: 'templates/app-loyalty.html',
+        controller: 'AppLoyaltyCtrl'
 
       }
     }
+  })
+     .state('target-audience', {
+    url: '/target-audience',
+        templateUrl: 'templates/target-audience.html',
+        controller: 'TargetAudienceCtrl'
+
   })
   .state('app.app-personal', {
     url: '/app-personal',
@@ -329,11 +345,13 @@ var firstapp=angular.module('starter', ['ionic', 'starter.controllers','ionic-da
         controller: 'LoyaltyCardCtrl'
 
     })
-    .state('add-employee', {
+    .state('app.add-employee', {
         url: '/add-employee',
+        views: {
+          'menuContent': {
         templateUrl: 'templates/add-employee.html',
         controller: 'AddEmployeeCtrl'
-
+}}
     })
     .state('add-newemployee', {
         url: '/add-newemployee',

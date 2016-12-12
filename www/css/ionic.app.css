@@ -12133,7 +12133,7 @@ a.button {
   .login-bar .forward {
     margin-right: 10px;
     float: right;
-    margin-top: 10px;
+    margin-top: 7px;
     display: inline-block; }
   .login-bar .title-name {
     vertical-align: middle;
@@ -12903,7 +12903,7 @@ input[type='date'] {
     border-bottom: none !important; }
 
 .add-emp input {
-  width: 90%; }
+  width: 89%; }
 
 .emp-dropdown {
   margin-top: 5px;
@@ -13303,6 +13303,16 @@ input[type='date'] {
 .target .card {
   margin: 0px 20px; }
 
-.target-submit {
-  margin: 10px;
-  width: 90% !important; }
+.target-icon {
+  font-size: 20px;
+  color: #b6b6b6; }
+
+.loyalty-list li .header {
+  display: inline-block; }
+  .loyalty-list li .header h3 {
+    color: #88CEC7; }
+  .loyalty-list li .header h4 {
+    color: #b6b6b6; }
+
+.loyalty-list li i {
+  color: #88CEC7; }
