@@ -109,6 +109,9 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   width: 18px;
   text-align: center;
 }
+.mobile{
+  font-size: 24px!important;
+}
 .loyalty{
   width: 18px;
 }
@@ -171,7 +174,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   border-color: $login-screen!important;
   color: #000!important;
   font-size:14px!important;
-
+  background-image: none!important;
 }
 .login-bar{
   border-bottom: 4px!important;
@@ -200,7 +203,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 }
 .form-margin{
   margin-top: 80px;
-  margin-left: 25px;
+  margin-left: 20px;
   margin-right: 25px;
   text-align: left;
 }
@@ -209,16 +212,16 @@ input[type='number']
 {
     border-bottom: 1px solid $login-grey;
     display: inline;
-    margin-left: 9px;
+    margin-left: 10px;
     width: 58%;
 }
 input[type='text']
 {
     border-bottom: 1px solid $login-grey;
     display: inline;
-    margin-left: 12px;
-    width: 83%;
-
+    margin-left: 10px;
+    width: 84%;
+    font-size: 16px;
 }
 input[type='password']
 {
@@ -236,26 +239,27 @@ input[type='password']
 
 }
 .select-regstration {
-
-    padding: 0px 0px 0px 0px !important;
+    padding: 0px 0px 0px -1px !important;
     select{
       position: relative;
       margin-left: 15px;
-      width: 85%;
+      width: 84%;
       border-radius: 0;
   }
   .registration-select {
     border-bottom: 1px solid $login-grey;
     max-width: 100%;
-    width: 85%;
-    padding: 10px;
+    width: 84%;
+    padding: 10px 0px;
     direction: ltr;
+    color: #b6b6b6;
   }
 }
+
 .icon-phone{
   font-size: 25px;
   vertical-align: middle;
-  width: 25px;
+  width: 26px;
   text-align: center;
 
 }
@@ -279,16 +283,17 @@ input[type='password']
   margin-right: 5px;
 }
 .mobile-number{
-  width: 50% !important;
+  // width: 58% !important;
+  width: calc(80% - 60px) !important;
 }
-
-
 .margin-bottom{
   margin-bottom: 5px;
 }
 .bottom-iagree{
   margin-bottom: 25px;
-
+}
+.all-bottom{
+  margin-bottom: 15px;
 }
 .header-bottom{
   border-bottom: 1px solid $login-grey;
@@ -298,16 +303,15 @@ input[type='password']
   margin-left: 5px;
 }
 .i-agree-checkbox{
-  margin-left: 10px;
+  margin-left: 30px;
   margin-right: 40px;
 .i-agree{
-  margin-left: 15px;
+  margin-left: -25px;
 }
 }
 .sign-in-button{
   color: $orange!important;
-  min-height:20px;
-  margin-top: -12px;
+  margin-left: 12px;
 }
 
 .login-bar{
@@ -344,12 +348,12 @@ input[type='password']
   margin-top: 80px;
 }
 .otp{
-  width: 92%!important;
+  width: 87%!important;
   margin-left: 1px!important;
 }
 .password{
   width: 85%!important;
-  margin-left: 5px!important;
+  margin-left: 4px!important;
 }
 .countdown-otp{
   float: right;
@@ -379,13 +383,14 @@ input[type='password']
   margin:25px 0px 25px 0px;
   text-align: center;
   .button{
-    min-height: 25px;
-    min-width: 80px;
+    min-height: 30px;
+    min-width: 30%;
     color:white;
-    font-size: 15px;
+    font-size: 12px;
+    line-height: 10px;
   }
   .margin-button{
-    margin: 0px 20px 0px 20px;
+    margin: 0px 20px 0px 10px;
   }
 
 }
@@ -465,6 +470,7 @@ input[type='password']
 }
 .continue{
   margin-top: 60px!important;
+  margin-bottom: 85px!important;
 }
 .address{
   width: 90%!important;
@@ -475,19 +481,28 @@ input[type='password']
 }
 .margin-building{
   margin-left: 10px;
+
   i{
     margin-top: 15px;
+    margin-bottom: 5px;
+
   label{
-    margin-left: 8px;
+    margin-left: 3px;
+    font-size: 16px;
   }}
 
+}
+.input-margin{
+  margin: 10px 0px;
 }
 .question{
   margin-top: 50px!important;
   margin-left: 12px;
   margin-right: 12px;
   select{
-    width: 95%!important;
+    width: 90%!important;
+    margin-left:11px;
+    margin-bottom: 5px;
   }
   button{
     margin-top: 80px!important;
@@ -506,22 +521,27 @@ input[type='password']
   font-size: 18px;
 }
 .preview-details{
-  margin-top: 70px;
-  margin-left: 40px;
+  // margin-top: 70px;
+  margin-left: 25px;
   margin-right: 20px;
 }
 .preview-margin{
-  margin-top: 15px;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 .preview-input{
   margin-left: 10px;
   width: 100%;
 }
 .preview-bottom{
-margin-bottom: -10px;
+// margin-bottom: -5px;
 }
 .margin-answer{
   margin-left: 7px!important;
+}
+.margin-footer{
+  margin-bottom: 45px;
+
 }
 .bottom-disabled{
 border-bottom: 0px!important;
@@ -544,6 +564,9 @@ background-color: inherit!important;
   margin-right: 10px;
   font-size: 14px !important;
   color: $login-grey !important;
+}
+.select-busi{
+margin-left: -17px;
 }
 .business-reg-content {
   position: static;
@@ -602,7 +625,9 @@ background-color: inherit!important;
   border-radius: 50%;
   background-color: $orange!important;
   margin-top: -30px;
-  margin-right: 20px;
+  margin-right: 15px;
+  height: 12px;
+  width: 12px;
   i{
     font-size: 25px;
     text-align: center;
@@ -612,12 +637,11 @@ background-color: inherit!important;
 .num-branch{
   margin-left: -5px;
   select{
-      border-bottom: 0px!important;
+    border-bottom: 0px!important;
   }
-
 }
 .business-details{
-  margin-top: 150px;
+  margin-top: 170px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -625,7 +649,7 @@ background-color: inherit!important;
   margin-left: 5px;
   margin-right:10px;
   margin-bottom: -5px;
-
+  margin-top: 10px;
   i{
     color: $login-grey;
     width: 25px;
@@ -640,16 +664,15 @@ background-color: inherit!important;
 }
 .plusbutton{
   border-radius: 50%;
-  background-color: $orange !important;
+  background-color: #e74b1a !important;
   min-height: 0px !important;
   min-width: 0px !important;
-  height: 18px;
-  width: 18px;
+  height: 20px;
+  width: 20px;
   font-size: 10px;
   line-height: 10px;
   float: right;
   padding: 0px;
-
 }
 .label-header{
   border-bottom: 1px solid black;
@@ -657,8 +680,11 @@ background-color: inherit!important;
   border-left: 0px;
   border-right: 0px;
   color: $light-green;
-  margin-top: 25px;
+  margin-top: 40px;
   padding: 0px;
+}
+.all-margin{
+  margin-top: 20px!important;
 }
 .add-photo{
   border: 2px solid black;
@@ -667,11 +693,10 @@ background-color: inherit!important;
   font-size: 9px;
   line-height: 12px;
   border-color: black!important;
-  margin: 12px;
+  margin: 5px 12px;
   padding: 0px;
   min-width: 0px;
   min-height: 0px;
-
 }
 .from-to{
 display: inline;
@@ -692,12 +717,12 @@ select{
 }
 .photos{
 height: 40px;
-margin: 10px;
+margin: 0px 10px;
 }
 .time-margin{
   margin-top: 15px;
   label{
-  font-size: 11px!important;
+  font-size: 16px!important;
 }}
 .time-block{
   margin-top: 15px;
@@ -707,6 +732,7 @@ margin: 10px;
     i{
       color: $orange;
       float: right;
+      font-size: 20px;
     }}
     label{
       select{
@@ -735,7 +761,6 @@ margin: 10px;
   border-radius: 0px;
   font-size: 10px;
   line-height: 20px;
-
 }
 }
 .collection{
@@ -769,11 +794,25 @@ margin: 10px;
   margin: 50px 15px 10px 20px;
 }
 .branch-review{
+  padding-left: 85px;
+  padding-top: 10px;
+  border-width: 0px!important;
   img{
-    height: 70px;
-    width: 70px;
+    margin-left: -10px;
+    max-width: 70px!important;
+    max-height: 70px!important;
     border-radius: 10px;
   }
+  .text-div{
+    border-bottom: 1px solid #B6B6B6;
+    padding-bottom: 10px;
+    h2{
+      color: $light-green;
+    }
+  }
+}
+.branch.item{
+  border-width: 0px;
 }
 .target-button{
   margin: 20px!important;
@@ -949,9 +988,10 @@ z-index: 1000;
   margin: 10px 0px 20px 0px!important;
   input{
     border-bottom: 2px solid #B6B6B6;
-    font-size: 12px;
+    font-size: 16px;
     margin-left: 0px;
     width: 100%!important;
+    padding: 15px 0px;
     height: 20px;
   }
 }
@@ -961,6 +1001,7 @@ z-index: 1000;
   margin-top: 10px;
   label{
       color: $login-grey;
+      font-size: 16px;
   }
   i{
     color: #B6B6B6;
@@ -974,19 +1015,20 @@ z-index: 1000;
         margin: 0px;
         border-bottom: 2px solid #B6B6B6;
         height: 20px;
-        font-size: 12px;
+        font-size: 16px;
         margin-left: 0px;
         display: inline-flex;
         margin-right: 5px;
+        padding: 10px 0px;
     }
     .currency{
         height:20px;
         font-size: 12px;
-        width: 25%;
-        border-bottom: 1px solid #B6B6B6;
+        width: 30%;
+        border-bottom: 2px solid #B6B6B6;
         display: inline-flex;
-        margin-left: 10px;
-        margin-right: 5px;
+        margin-left: 4px;
+        margin-right: 4px;
         select{
             margin-left: -10px;
             width: 95%;
@@ -995,16 +1037,17 @@ z-index: 1000;
     .rate{
         width:20%;
         margin: 0px;
-        border-bottom: 1px solid #B6B6B6;
+        border-bottom: 2px solid #B6B6B6;
         display: inline-flex;
         margin-right: 5px;
         height: 20px;
-        font-size: 12px;
+        font-size: 16px;
         margin-left: 0px;
     }
 }
 .radio-color{
     color: #B6B6B6;
+    font-size: 16px;
 }
 .submit-blue{
     color:#8C9EFE!important;
@@ -1068,9 +1111,13 @@ color: #9C9C9C;
   }
 }
 .add-emp{
+  position: relative;
   input{
     width: 89%;
   }
+}
+.emp-drop{
+  padding: 0px!important;
 }
 .emp-dropdown{
   margin-top: 5px;
@@ -1103,8 +1150,9 @@ color: #9C9C9C;
   padding: 0px;
   border-top: 0px;
   border-color: $login-grey;
-  margin: 0px 0px 0px 12px;
-  width: 90%;
+  margin: 0px 0px 0px 10px;
+  width: 89%;
+  position: absolute;
   li:last-child {
     .empdropdown-detail { border: none; }
   }
@@ -1147,11 +1195,13 @@ padding-top: 60px;
 .circle-position{
   float: right;
   margin-top: -60px;
+  height: 10px;
+  width: 10px;
 }
 .time-emp{
   float: right;
-  margin-right: 20px;
-  font-size: 16px;
+  margin-right: 15px;
+  font-size: 12px;
   color: $login-grey
 }
 .circle.active{
@@ -1165,30 +1215,30 @@ padding-top: 60px;
 
 .branch-employee{
   img{
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     vertical-align: middle;
-    margin-left:  30px;
+    margin-left:  20px;
   }
 }
 
 .branch-emplist{
   display: inline-block;
   line-height: 0.5;
-  width: 50%;
+  width: 60%;
   margin-bottom: 15px;
-  margin-left: 30px;
+  margin-left: 15px;
   margin-top: 12px;
   border-bottom: 1px solid #B6B6B6;
   vertical-align: middle;
   h4{
   color:  $login-grey;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 0.7;
 
   }
   h5{
-    font-size: 16px;
+    font-size: 12px;
     line-height: 0.7;
     color:  $login-grey;
   }
@@ -1213,16 +1263,23 @@ padding-top: 60px;
   padding: 5px;
   i{
     float: right;
-    margin-top: -40px;
+    margin-top: -53px;
     margin-right: 30px;
     color: $login-grey;
     font-size: 18px;
   }
   h5{
     margin-left: 20px;
-    line-height: 0.5;
+    line-height: 1;
     color: $login-grey;
+    font-size: 16px;
   }
+}
+.offer-card{
+  margin: 20px;
+}
+.bg-color{
+  background-color: #EFEFEF;
 }
 .checkin{
   margin: 15px;
@@ -1393,6 +1450,7 @@ padding-top: 60px;
   }
   .tab-item {
     color: $orange;
+    border: 1px solid $orange;
     max-width: 100%;
   }
   .tab-item.tab-item-active, .tab-item.active, .tab-item.activated {
@@ -1401,8 +1459,31 @@ padding-top: 60px;
     border-color: #e74b1a;
   }
 }
+.add-promo{
+  background-color: #e74b1a;
+opacity: 0.9;
+color: white;
+border-radius: 50%;
+width: 25px;
+padding: 25px;
+position: fixed;
+bottom: 68%;
+left: 42%;
+position: relative;
+z-index: 1000;
+height: 25px;
+i{
+      font-size: 25px;
+      color: white;
+      position: relative;
+      top: -10px;
+      right: 10px;}
+}
+.promo-text{
+position: relative;
+}
 .tab-content{
-  margin-top: 100px!important;
+  margin-top: 94px!important;
 }
 .distribution-text{
 border: 1px solid #595959 !important;
@@ -1487,11 +1568,12 @@ display: inline-flex;
 .button-offer{
       min-width: 0px;
     min-height: 0px;
-    height: 30px;
+    height: 39PX;
+    width: 30%;
     margin: 5px;
     background-color: #B6B6B6 !important;
     border-radius: 0px;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 20px;
 }
 .button-day{
@@ -1556,6 +1638,16 @@ display: inline-flex;
     }
     i{
       color: #88CEC7;
+      margin-top: 10px;
     }
   }
+}
+
+.check{
+  margin: 10px!important;
+}
+.side-menu {
+  ion-list ion-item a.item-content.active  {
+background: $orange !important;
+}
 }

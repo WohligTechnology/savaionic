@@ -2,36 +2,39 @@
   <div class="bar bar-header bar-light header-bottom ">
 <h1 class="title login-bar"><img src="/img/back.png" alt="back"  class="back" ng-click="goBackHandler();"/><span class="title-name">Mobile Verification</span>
 <!-- <img src="/img/forward.png" alt="forward" class="forward"/> -->
-<i class="fa fa-search forward"></i></h1>
+<!-- <i class="fa fa-search forward"></i></h1> -->
 </div>
-    <ion-content >
+    <ion-content  >
 
-  <form class="item form-margin">
+  <div class="item form-margin">
     <h3 class="text-center verifiaction-color "><b>Please verify your Mobile Number</b>
     </h3>
     <h3 class="text-center verifiaction-color">We have sent OTP to
       <!-- <input type="tel"> -->
     </h3>
-      <h1 class="text-center margin-bottom verifiaction-color">9555554444  <i class="fa fa-pencil verifiaction-color"></i>
-      </h1>
+      <h2 class="text-center margin-bottom verifiaction-color mobile" >9555554444  <i class="fa fa-pencil verifiaction-color" ui-sref="social-signup"></i>
+      </h2>
       <div class=" enter-otp">
 
         <i class="fa fa-key icon-key sign-up-color"> </i>
         <label for="" class="forward countdown-otp">4.59</label>
-      <input type="text" placeholder="Enter your otp"  class="otp" only-digits ng-model="formData.otp">
+      <input type="text" placeholder="Enter your OTP"  class="otp" only-digits ng-model="formData.otp" minlength="6" maxlength="6">
     </div>
     <button class="button button-block  button-light button-margin sign-up" ui-sref="personaldetail">
         Submit</button>
         <h3 class="text-center receive-otp">Don't Receive the OTP?
         </h3>
 <div class="resend-otp">
-        <button class="button button-stable margin-button">
-  Resend OTP
-</button><button class="button button-stable margin-button">
-  Call Me
-</button>
+<div class="row">
+  <button class="button button-stable margin-button col">
+    Resend OTP
+  </button>
+  <button class="button button-stable margin-button col">
+    Call Me
+  </button>
 </div>
-  </form>
+</div>
+  </div>
     </ion-content>
     <div class="bar bar-footer ">
       <div >
@@ -40,6 +43,6 @@
         </div>
       <progress value="10" max="100" class="progress">10%</progress>
     </div>
-    <button  class="bottom-continue button button-clear pull-right">Continue</button>
+    <button  class="bottom-continue button button-clear pull-right" ui-sref="personaldetail">Continue</button>
     </div>
 </ion-view>

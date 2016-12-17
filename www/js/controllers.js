@@ -68,6 +68,13 @@ angular.module('starter.controllers', [])
    }
 })
 .controller('AppPersonalCtrl', function($scope) {
+  $scope.previewDetail = {};
+  $scope.previewDetail.persoanlInfo = false;
+  console.log("here");
+  $scope.persoanlInfo = function () {
+    $scope.previewDetail.persoanlInfo = !$scope.previewDetail.persoanlInfo;
+  console.log($scope.previewDetail.persoanlInfo);
+  };
   $scope.goBackHandler = function()
    {
       //  $ionicHistory.goBack();                           //This doesn't work
@@ -429,10 +436,13 @@ angular.module('starter.controllers', [])
    }
 })
 .controller('PreviewBuisnessDetailCtrl', function($scope) {
+
   $scope.goBackHandler = function()
    {
       //  $ionicHistory.goBack();                           //This doesn't work
-       window.history.back();                          //This works
+       window.history.back();
+       console.log("hey fsddsfghj");
+                         //This works
       //  alert('code to go back called. Did it work?');  //For testing
    }
 })
@@ -508,7 +518,21 @@ angular.module('starter.controllers', [])
       //  alert('code to go back called. Did it work?');  //For testing
    }
 })
+.controller('CreateCardCtrl', function($scope) {
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
+})
 .controller('PreviewPersonalDetailCtrl', function($scope) {
+  $scope.goBackHandler = function()
+   {
+      //  $ionicHistory.goBack();                           //This doesn't work
+       window.history.back();                          //This works
+      //  alert('code to go back called. Did it work?');  //For testing
+   }
 $scope.previewDetail = {};
 $scope.previewDetail.persoanlInfo = false;
 console.log("here");
@@ -546,12 +570,7 @@ console.log($scope.previewDetail.persoanlInfo);
   $scope.openDatePicker = function(){
     ionicDatePicker.openDatePicker(ipObj1);
   };
-  $scope.goBackHandler = function()
-   {
-      //  $ionicHistory.goBack();                           //This doesn't work
-       window.history.back();                          //This works
-      //  alert('code to go back called. Did it work?');  //For testing
-   }
+
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {

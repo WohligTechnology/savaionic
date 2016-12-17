@@ -220,6 +220,15 @@ var firstapp=angular.module('starter', ['ionic', 'starter.controllers','ionic-da
       }
     }
   })
+    .state('app.create-card', {
+    url: '/create-card',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/create-card.html',
+        controller: 'CreateCardCtrl'
+      }
+    }
+  })
   .state('branch-employee', {
     url: '/branch-employee',
         templateUrl: 'templates/branch-employee.html',

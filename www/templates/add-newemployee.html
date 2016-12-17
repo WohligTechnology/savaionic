@@ -1,6 +1,6 @@
 <div class="bar bar-header bar-light header-bottom ">
     <h1 class="title login-bar"><img src="/img/back.png" alt="back"  class="back" ng-click="goBackHandler();"/><span class="title-name">Add New Employees</span>
-<img src="/img/forward.png" alt="forward" class="forward"/>
+<!-- <img src="/img/forward.png" alt="forward" class="forward"/> -->
 
 </div>
 <ion-content  >
@@ -60,7 +60,7 @@
       </label>
     </div>
 
-    <button class="button button-block  button-light continue sign-up" ui-sref="branch-registration">
+    <button class="button button-block  button-light continue sign-up" ui-sref="app.add-employee">
       Save</button>
 </form>
 </ion-content>
@@ -72,6 +72,6 @@
     </div>
   <progress value="40" max="100" class="progress">40%</progress>
 </div>
-<button  class="bottom-continue button button-clear pull-right submit-blue" ui-sref="review-branchdetail">Save</button>
+<button  class="bottom-continue button button-clear pull-right submit-blue" ui-sref="app.add-employee">Save</button>
 </div>
 </ion-view>

@@ -12061,6 +12061,9 @@ a.button {
   width: 18px;
   text-align: center; }
 
+.mobile {
+  font-size: 24px !important; }
+
 .loyalty {
   width: 18px; }
 
@@ -12117,7 +12120,8 @@ a.button {
   background-color: #f9f7f7 !important;
   border-color: #f9f7f7 !important;
   color: #000 !important;
-  font-size: 14px !important; }
+  font-size: 14px !important;
+  background-image: none !important; }
 
 .login-bar {
   border-bottom: 4px !important;
@@ -12141,21 +12145,22 @@ a.button {
 
 .form-margin {
   margin-top: 80px;
-  margin-left: 25px;
+  margin-left: 20px;
   margin-right: 25px;
   text-align: left; }
 
 input[type='number'] {
   border-bottom: 1px solid #595959;
   display: inline;
-  margin-left: 9px;
+  margin-left: 10px;
   width: 58%; }
 
 input[type='text'] {
   border-bottom: 1px solid #595959;
   display: inline;
-  margin-left: 12px;
-  width: 83%; }
+  margin-left: 10px;
+  width: 84%;
+  font-size: 16px; }
 
 input[type='password'] {
   border-bottom: 1px solid #595959;
@@ -12170,23 +12175,24 @@ input[type='date'] {
   width: 85%; }
 
 .select-regstration {
-  padding: 0px 0px 0px 0px !important; }
+  padding: 0px 0px 0px -1px !important; }
   .select-regstration select {
     position: relative;
     margin-left: 15px;
-    width: 85%;
+    width: 84%;
     border-radius: 0; }
   .select-regstration .registration-select {
     border-bottom: 1px solid #595959;
     max-width: 100%;
-    width: 85%;
-    padding: 10px;
-    direction: ltr; }
+    width: 84%;
+    padding: 10px 0px;
+    direction: ltr;
+    color: #b6b6b6; }
 
 .icon-phone {
   font-size: 25px;
   vertical-align: middle;
-  width: 25px;
+  width: 26px;
   text-align: center; }
 
 .icon-key {
@@ -12209,13 +12215,16 @@ input[type='date'] {
   margin-right: 5px; }
 
 .mobile-number {
-  width: 50% !important; }
+  width: calc(80% - 60px) !important; }
 
 .margin-bottom {
   margin-bottom: 5px; }
 
 .bottom-iagree {
   margin-bottom: 25px; }
+
+.all-bottom {
+  margin-bottom: 15px; }
 
 .header-bottom {
   border-bottom: 1px solid #595959; }
@@ -12225,15 +12234,14 @@ input[type='date'] {
   margin-left: 5px; }
 
 .i-agree-checkbox {
-  margin-left: 10px;
+  margin-left: 30px;
   margin-right: 40px; }
   .i-agree-checkbox .i-agree {
-    margin-left: 15px; }
+    margin-left: -25px; }
 
 .sign-in-button {
   color: #e74b1a !important;
-  min-height: 20px;
-  margin-top: -12px; }
+  margin-left: 12px; }
 
 .login-bar .back {
   width: 20px;
@@ -12266,12 +12274,12 @@ input[type='date'] {
   margin-top: 80px; }
 
 .otp {
-  width: 92% !important;
+  width: 87% !important;
   margin-left: 1px !important; }
 
 .password {
   width: 85% !important;
-  margin-left: 5px !important; }
+  margin-left: 4px !important; }
 
 .countdown-otp {
   float: right;
@@ -12298,12 +12306,13 @@ input[type='date'] {
   margin: 25px 0px 25px 0px;
   text-align: center; }
   .resend-otp .button {
-    min-height: 25px;
-    min-width: 80px;
+    min-height: 30px;
+    min-width: 30%;
     color: white;
-    font-size: 15px; }
+    font-size: 12px;
+    line-height: 10px; }
   .resend-otp .margin-button {
-    margin: 0px 20px 0px 20px; }
+    margin: 0px 20px 0px 10px; }
 
 .registration-bottom {
   margin-bottom: 5px; }
@@ -12370,7 +12379,8 @@ input[type='date'] {
   width: 275px; }
 
 .continue {
-  margin-top: 60px !important; }
+  margin-top: 60px !important;
+  margin-bottom: 85px !important; }
 
 .address {
   width: 90% !important; }
@@ -12381,16 +12391,23 @@ input[type='date'] {
 .margin-building {
   margin-left: 10px; }
   .margin-building i {
-    margin-top: 15px; }
+    margin-top: 15px;
+    margin-bottom: 5px; }
     .margin-building i label {
-      margin-left: 8px; }
+      margin-left: 3px;
+      font-size: 16px; }
+
+.input-margin {
+  margin: 10px 0px; }
 
 .question {
   margin-top: 50px !important;
   margin-left: 12px;
   margin-right: 12px; }
   .question select {
-    width: 95% !important; }
+    width: 90% !important;
+    margin-left: 11px;
+    margin-bottom: 5px; }
   .question button {
     margin-top: 80px !important; }
 
@@ -12407,22 +12424,22 @@ input[type='date'] {
   font-size: 18px; }
 
 .preview-details {
-  margin-top: 70px;
-  margin-left: 40px;
+  margin-left: 25px;
   margin-right: 20px; }
 
 .preview-margin {
-  margin-top: 15px; }
+  margin-top: 25px;
+  margin-bottom: 10px; }
 
 .preview-input {
   margin-left: 10px;
   width: 100%; }
 
-.preview-bottom {
-  margin-bottom: -10px; }
-
 .margin-answer {
   margin-left: 7px !important; }
+
+.margin-footer {
+  margin-bottom: 45px; }
 
 .bottom-disabled {
   border-bottom: 0px !important;
@@ -12444,6 +12461,9 @@ input[type='date'] {
   margin-right: 10px;
   font-size: 14px !important;
   color: #595959 !important; }
+
+.select-busi {
+  margin-left: -17px; }
 
 .business-reg-content {
   position: static; }
@@ -12496,7 +12516,9 @@ input[type='date'] {
   border-radius: 50%;
   background-color: #e74b1a !important;
   margin-top: -30px;
-  margin-right: 20px; }
+  margin-right: 15px;
+  height: 12px;
+  width: 12px; }
   .circle i {
     font-size: 25px;
     text-align: center;
@@ -12508,14 +12530,15 @@ input[type='date'] {
     border-bottom: 0px !important; }
 
 .business-details {
-  margin-top: 150px;
+  margin-top: 170px;
   margin-left: 20px;
   margin-right: 20px; }
 
 .preview-business {
   margin-left: 5px;
   margin-right: 10px;
-  margin-bottom: -5px; }
+  margin-bottom: -5px;
+  margin-top: 10px; }
   .preview-business i {
     color: #595959;
     width: 25px;
@@ -12532,8 +12555,8 @@ input[type='date'] {
   background-color: #e74b1a !important;
   min-height: 0px !important;
   min-width: 0px !important;
-  height: 18px;
-  width: 18px;
+  height: 20px;
+  width: 20px;
   font-size: 10px;
   line-height: 10px;
   float: right;
@@ -12545,8 +12568,11 @@ input[type='date'] {
   border-left: 0px;
   border-right: 0px;
   color: #88CEC7;
-  margin-top: 25px;
+  margin-top: 40px;
   padding: 0px; }
+
+.all-margin {
+  margin-top: 20px !important; }
 
 .add-photo {
   border: 2px solid black;
@@ -12555,7 +12581,7 @@ input[type='date'] {
   font-size: 9px;
   line-height: 12px;
   border-color: black !important;
-  margin: 12px;
+  margin: 5px 12px;
   padding: 0px;
   min-width: 0px;
   min-height: 0px; }
@@ -12577,12 +12603,12 @@ input[type='date'] {
 
 .photos {
   height: 40px;
-  margin: 10px; }
+  margin: 0px 10px; }
 
 .time-margin {
   margin-top: 15px; }
   .time-margin label {
-    font-size: 11px !important; }
+    font-size: 16px !important; }
 
 .time-block {
   margin-top: 15px;
@@ -12590,7 +12616,8 @@ input[type='date'] {
   width: 70%; }
   .time-block label i {
     color: #e74b1a;
-    float: right; }
+    float: right;
+    font-size: 20px; }
   .time-block label select {
     margin-left: 0px !important;
     font-size: 10px; }
@@ -12642,10 +12669,23 @@ input[type='date'] {
 .review-margin {
   margin: 50px 15px 10px 20px; }
 
-.branch-review img {
-  height: 70px;
-  width: 70px;
-  border-radius: 10px; }
+.branch-review {
+  padding-left: 85px;
+  padding-top: 10px;
+  border-width: 0px !important; }
+  .branch-review img {
+    margin-left: -10px;
+    max-width: 70px !important;
+    max-height: 70px !important;
+    border-radius: 10px; }
+  .branch-review .text-div {
+    border-bottom: 1px solid #B6B6B6;
+    padding-bottom: 10px; }
+    .branch-review .text-div h2 {
+      color: #88CEC7; }
+
+.branch.item {
+  border-width: 0px; }
 
 .target-button {
   margin: 20px !important; }
@@ -12795,9 +12835,10 @@ input[type='date'] {
   margin: 10px 0px 20px 0px !important; }
   .program-name input {
     border-bottom: 2px solid #B6B6B6;
-    font-size: 12px;
+    font-size: 16px;
     margin-left: 0px;
     width: 100% !important;
+    padding: 15px 0px;
     height: 20px; }
 
 .business-program {
@@ -12805,7 +12846,8 @@ input[type='date'] {
   margin-bottom: 10px;
   margin-top: 10px; }
   .business-program label {
-    color: #595959; }
+    color: #595959;
+    font-size: 16px; }
   .business-program i {
     color: #B6B6B6;
     margin-right: 10px; }
@@ -12815,19 +12857,20 @@ input[type='date'] {
   margin: 0px;
   border-bottom: 2px solid #B6B6B6;
   height: 20px;
-  font-size: 12px;
+  font-size: 16px;
   margin-left: 0px;
   display: inline-flex;
-  margin-right: 5px; }
+  margin-right: 5px;
+  padding: 10px 0px; }
 
 .points-conversion .currency {
   height: 20px;
   font-size: 12px;
-  width: 25%;
-  border-bottom: 1px solid #B6B6B6;
+  width: 30%;
+  border-bottom: 2px solid #B6B6B6;
   display: inline-flex;
-  margin-left: 10px;
-  margin-right: 5px; }
+  margin-left: 4px;
+  margin-right: 4px; }
   .points-conversion .currency select {
     margin-left: -10px;
     width: 95%; }
@@ -12835,15 +12878,16 @@ input[type='date'] {
 .points-conversion .rate {
   width: 20%;
   margin: 0px;
-  border-bottom: 1px solid #B6B6B6;
+  border-bottom: 2px solid #B6B6B6;
   display: inline-flex;
   margin-right: 5px;
   height: 20px;
-  font-size: 12px;
+  font-size: 16px;
   margin-left: 0px; }
 
 .radio-color {
-  color: #B6B6B6; }
+  color: #B6B6B6;
+  font-size: 16px; }
 
 .submit-blue {
   color: #8C9EFE !important; }
@@ -12902,8 +12946,13 @@ input[type='date'] {
   .input-emp select {
     border-bottom: none !important; }
 
-.add-emp input {
-  width: 89%; }
+.add-emp {
+  position: relative; }
+  .add-emp input {
+    width: 89%; }
+
+.emp-drop {
+  padding: 0px !important; }
 
 .emp-dropdown {
   margin-top: 5px;
@@ -12933,8 +12982,9 @@ input[type='date'] {
   padding: 0px;
   border-top: 0px;
   border-color: #595959;
-  margin: 0px 0px 0px 12px;
-  width: 90%; }
+  margin: 0px 0px 0px 10px;
+  width: 89%;
+  position: absolute; }
   .item-emp li:last-child .empdropdown-detail {
     border: none; }
 
@@ -12970,12 +13020,14 @@ input[type='date'] {
 
 .circle-position {
   float: right;
-  margin-top: -60px; }
+  margin-top: -60px;
+  height: 10px;
+  width: 10px; }
 
 .time-emp {
   float: right;
-  margin-right: 20px;
-  font-size: 16px;
+  margin-right: 15px;
+  font-size: 12px;
   color: #595959; }
 
 .circle.active {
@@ -12987,26 +13039,26 @@ input[type='date'] {
   background-color: #A1A6B1 !important; }
 
 .branch-employee img {
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
   vertical-align: middle;
-  margin-left: 30px; }
+  margin-left: 20px; }
 
 .branch-emplist {
   display: inline-block;
   line-height: 0.5;
-  width: 50%;
+  width: 60%;
   margin-bottom: 15px;
-  margin-left: 30px;
+  margin-left: 15px;
   margin-top: 12px;
   border-bottom: 1px solid #B6B6B6;
   vertical-align: middle; }
   .branch-emplist h4 {
     color: #595959;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 0.7; }
   .branch-emplist h5 {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 0.7;
     color: #595959; }
 
@@ -13028,14 +13080,21 @@ input[type='date'] {
   padding: 5px; }
   .branch-list i {
     float: right;
-    margin-top: -40px;
+    margin-top: -53px;
     margin-right: 30px;
     color: #595959;
     font-size: 18px; }
   .branch-list h5 {
     margin-left: 20px;
-    line-height: 0.5;
-    color: #595959; }
+    line-height: 1;
+    color: #595959;
+    font-size: 16px; }
+
+.offer-card {
+  margin: 20px; }
+
+.bg-color {
+  background-color: #EFEFEF; }
 
 .checkin {
   margin: 15px; }
@@ -13175,6 +13234,7 @@ input[type='date'] {
 
 .tab-button .tab-item {
   color: #e74b1a;
+  border: 1px solid #e74b1a;
   max-width: 100%; }
 
 .tab-button .tab-item.tab-item-active, .tab-button .tab-item.active, .tab-button .tab-item.activated {
@@ -13182,8 +13242,31 @@ input[type='date'] {
   color: #fff;
   border-color: #e74b1a; }
 
+.add-promo {
+  background-color: #e74b1a;
+  opacity: 0.9;
+  color: white;
+  border-radius: 50%;
+  width: 25px;
+  padding: 25px;
+  position: fixed;
+  bottom: 68%;
+  left: 42%;
+  position: relative;
+  z-index: 1000;
+  height: 25px; }
+  .add-promo i {
+    font-size: 25px;
+    color: white;
+    position: relative;
+    top: -10px;
+    right: 10px; }
+
+.promo-text {
+  position: relative; }
+
 .tab-content {
-  margin-top: 100px !important; }
+  margin-top: 94px !important; }
 
 .distribution-text {
   border: 1px solid #595959 !important;
@@ -13255,11 +13338,12 @@ input[type='date'] {
 .button-offer {
   min-width: 0px;
   min-height: 0px;
-  height: 30px;
+  height: 39PX;
+  width: 30%;
   margin: 5px;
   background-color: #B6B6B6 !important;
   border-radius: 0px;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 20px; }
 
 .button-day {
@@ -13315,4 +13399,11 @@ input[type='date'] {
     color: #b6b6b6; }
 
 .loyalty-list li i {
-  color: #88CEC7; }
+  color: #88CEC7;
+  margin-top: 10px; }
+
+.check {
+  margin: 10px !important; }
+
+.side-menu ion-list ion-item a.item-content.active {
+  background: #e74b1a !important; }

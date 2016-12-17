@@ -1,12 +1,12 @@
 <ion-view title="Employees">
     <div class="bar bar-header bar-light header-bottom ">
         <h1 class="title login-bar"><img src="/img/back.png" alt="back"  class="back" ng-click="goBackHandler();"/><span class="title-name">Add Employees to Branch</span>
-<img src="/img/forward.png" alt="forward" class="forward"/>
+<!-- <img src="/img/forward.png" alt="forward" class="forward"/> -->
 
 </div>
-<ion-content  >
+<ion-content class="has-header">
 
-<div class="add-emp">
+<div class="add-emp preview-margin preview-details">
 <input type="text" ng-model="searchtext" placeholder="Search By Name" ng-click="listItem = !listItem"><i class="fa fa-search" ng-click="listItem = !listItem"></i>
 	<ul class="item item-emp" ng-show="listItem">
   <li ng-repeat="emp in employees | filter: searchtext">
@@ -21,6 +21,37 @@
   </li>
 	</ul>
 </div>
+<div class="">
+  <ul class="" >
+
+  <li ng-repeat="emp in employees ">
+    <div class="emp-dropdown " ui-sref="app.employee-detail">
+      <img ng-src="{{emp.image}}" alt="{{emp.name}}" class= ""/>
+      <div class="empdropdown-detail emp-drop">
+        <h4>{{emp.name}}</h4>
+        <h5>{{emp.empid}}</h5>
+        <h5>{{emp.position}}</h5>
+      </div>
+    </div>
+  </li>
+  </ul>
+  <ul class="" >
+
+  <li ng-repeat="emp in employees ">
+    <div class="emp-dropdown" ui-sref="app.employee-detail">
+      <img ng-src="{{emp.image}}" alt="{{emp.name}}" class= ""/>
+      <div class="empdropdown-detail  emp-drop">
+        <h4>{{emp.name}}</h4>
+        <h5>{{emp.empid}}</h5>
+        <h5>{{emp.position}}</h5>
+      </div>
+    </div>
+  </li>
+  </ul>
+
+
+</div>
+
 
 </ion-content>
 <div class="float-button" ui-sref="add-newemployee">

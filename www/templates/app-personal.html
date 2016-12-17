@@ -1,76 +1,72 @@
-<ion-view title="Personal Details">
+<ion-view title="Personal Info">
   <div class="bar bar-header bar-light header-bottom ">
 <h1 class="title login-bar"><img src="/img/back.png" alt="back"  class="back" ng-click="goBackHandler();"/><span class="title-name">Preview Personal Detail</span>
 <!-- <img src="/img/forward.png" alt="forward" class="forward"/> -->
 <i class="fa fa-search forward"></i></h1>
 </div>
-    <ion-content >
-<form class=" preview-details " ng-model="previewDetail">
+    <ion-content class="has-header">
+<form class=" preview-details margin-footer" ng-model="previewDetail">
 <div class="preview-margin">
   <label for="Personal info" class="header-details">Personal info<span ng-click="persoanlInfo()"><i class="fa fa-pencil pencil"  ></i></input>
 </div>
   <div class="preview-bottom">
-  <i class="fa fa-user"></i><input type="text" placeholder="Title" ng-disabled="previewDetail.persoanlInfo" ng-model="previewDetail.title"class="bottom-disabled"></input>
+  <i class="fa fa-user"></i><input type="text" placeholder="Title" ng-disabled="previewDetail.persoanlInfo" value="Mr." class="bottom-disabled" ></input>
 </div>
   <div class="preview-bottom">
-    <i class="fa fa-user"></i><input type="text" placeholder="First Name" ng-disabled="previewDetail.persoanlInfo" ng-model="previewDetail.firstname"class="bottom-disabled"></input>
+    <i class="fa fa-user"></i><input type="text" placeholder="First Name" ng-disabled="previewDetail.persoanlInfo" value="Mahesh" class="bottom-disabled"></input>
 </div>
   <div class="preview-bottom">
-    <i class="fa fa-user"></i><input type="text" placeholder="Last Name" ng-disabled="previewDetail.persoanlInfo" ng-model="previewDetail.lastname" class="bottom-disabled"></input>
+    <i class="fa fa-user"></i><input type="text" placeholder="Last Name" ng-disabled="previewDetail.persoanlInfo"  value="Mauraya" class="bottom-disabled"></input>
 </div>
   <div class="preview-margin">
   <label for="Date of Birth" class="header-details">Date of Birth<i class="fa fa-pencil pencil "></i></label>
 </div>
   <div class="preview-bottom">
-    <i class="fa fa-calendar"></i><input type="date" placeholder="Date of Birth" disabled class="bottom-disabled" ></input>
+    <i class="fa fa-calendar"></i><input type="text" placeholder="Date of Birth"  class="bottom-disabled" value="06/14/2016" ></input>
 
 </div>
   <div class="preview-margin">
   <label for="Address" class="header-details">Address<i class="fa fa-pencil pencil"></i></label>
 </div>
   <div class="preview-bottom">
-    <i class="fa fa-building"></i><input type="text" placeholder="Address 1" disabled class="bottom-disabled"></input>
+    <i class="fa fa-building"></i><input type="text" placeholder="Address 1" value="Plot no. 3 Flat no A/30 Laxmi Nivas" class="bottom-disabled"></input>
 </div>
 <div class="preview-input preview-bottom">
-  <input type="text" placeholder="Address 2" disabled class="bottom-disabled"></input>
+  <input type="text" placeholder="Address 2" value="3rd Floor Near Sadhana School " class="bottom-disabled"></input>
 </div >
 <div class="preview-input preview-bottom">
-  <input type="text" placeholder="County" disabled class="bottom-disabled"></input>
+  <input type="text" placeholder="County" value="Sion (w)" class="bottom-disabled"></input>
 </div>
 <div class="preview-input preview-bottom">
-  <input type="text" placeholder="Town/City" disabled class="bottom-disabled"></input>
+  <input type="text" placeholder="Town/City" value="Mumbai,Maharastra" class="bottom-disabled"></input>
 </div>
 <div class="preview-input preview-bottom">
-  <input type="text" placeholder="Pincode" disabled class="bottom-disabled"></input>
+  <input type="text" placeholder="Pincode" value="400022" class="bottom-disabled"></input>
 </div>
 <div class="preview-input preview-bottom">
-  <input type="text" placeholder="Country" disabled class="bottom-disabled"></input>
+  <input type="text" placeholder="Country" value="India" class="bottom-disabled"></input>
 </div>
-  <div class="preview-margin">
+  <div class="preview-margin all-bottom">
   <label for="Security Question" class="header-details">Security Question<i class="fa fa-pencil pencil" ></i></label>
   <div class="preview-bottom">
-    <i class="fa fa-question-circle-o"></i><input type="text" placeholder=" Question" disabled class="bottom-disabled"></input>
+    <i class="fa fa-question-circle-o"></i><input type="text" placeholder=" Question" value="Your Dog Name?" class="bottom-disabled"></input>
   </div>
-  <div class="preview-bottom">
-    <i class="fa fa-check"></i> <input type="text" placeholder="Answer" class="margin-answer bottom-disabled" disabled ></input>
+  <div class="preview-bottom ">
+    <i class="fa fa-check"></i> <input type="text" placeholder="Answer" class="margin-answer bottom-disabled" value="Puppy" ></input>
   </div>
 </div>
 
-<!--
-      <button class="button button-block  button-light continue sign-up" ui-sref="business-address">
-        Submit</button>
+  </form>
 
-      </form> -->
+</ion-content>
+<div class="bar bar-footer">
 
-    </ion-content>
-    <!-- <div class="bar bar-footer">
-
-      <div >
-        <div >
-          <label for="" class="progress-label">25% Completed</label>
-        </div>
-      <progress value="25" max="100" class="progress">50%</progress>
+  <div >
+    <div >
+      <label for="" class="progress-label">25% Completed</label>
     </div>
+  <progress value="25" max="100" class="progress">50%</progress>
+</div>
 
-    </div> -->
-   </ion-view>
+</div>
+</ion-view>

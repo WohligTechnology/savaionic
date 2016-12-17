@@ -1,7 +1,7 @@
 <ion-view>
     <div class="bar bar-header bar-light header-bottom ">
         <h1 class="title login-bar"><img src="/img/back.png" alt="back"  class="back" ng-click="goBackHandler();"/><span class="title-name">New Loyalty Programme</span>
-<img src="/img/forward.png" alt="forward" class="forward"/>
+<!-- <img src="/img/forward.png" alt="forward" class="forward"/> -->
 
 </div>
 
@@ -13,38 +13,42 @@
     </div>
     <div class=" business-program">
 
-    <label class="registration-select address">
+    <label class="registration-select address all-margin">
       Business Programme <i class="fa fa-info-circle pull-right "></i>
     </label>
     </div>
-<div class="radio-color">
-  <input type='radio' name='group'  /> Single Business Program
-</div>
-<div class="radio-color">
-  <input type='radio' name='group'  /> Coalition Program
-</div>
-    <div class=" business-program">
+    <div class="all-margin all-bottom">
+      <div class="radio-color">
+        <input type='radio' name='group'  /> Single Business Program
+      </div>
+      <div class="radio-color">
+        <input type='radio' name='group'  /> Coalition Program
+      </div>
+    </div>
+
+    <div class=" business-program all-margin">
     <label class="registration-select address">
     What do you want to issue: <i class="fa fa-info-circle pull-right "></i>
     </label>
     </div>
-<div class="radio-color">
-  <input type='radio' name='group1'   /> Loyalty points
+    <div class="all-margin all-bottom">
+      <div class="radio-color ">
+        <input type='radio' name='group1'   /> Loyalty points
+      </div>
+      <div class="radio-color">
+        <input type='radio' name='group1'   /> Loyalty card with stamps
+      </div>
+    </div>
 
-</div>
-<div class="radio-color">
-  <input type='radio' name='group1'   /> Loyalty card with stamps
 
-</div>
-
-<div class=" business-program">
+<div class=" business-program all-margin">
 <label class="registration-select address">
 Set point conversion/Rate :<i class="fa fa-info-circle pull-right "></i>
 </label>
 </div>
-<div class="points-conversion">
+<div class="points-conversion all-margin all-bottom">
 
-<input type="text" placeholder="Points(500 points)"  class="points">
+<input type="text" placeholder="Points"  class="points">
 
     <label class="item-input item-select select-regstration  currency">
         <select class="registration-select sign-up-color">
@@ -56,10 +60,10 @@ Set point conversion/Rate :<i class="fa fa-info-circle pull-right "></i>
       </label>
 
 
-<input type="text" placeholder="Rate (€1)"  class=" rate">
+<input type="text" placeholder="Rate"  class=" rate">
 </div>
 
-  <div class=" business-program">
+  <div class=" business-program all-margin">
   <label class="registration-select address">
   Generate Points:<i class="fa fa-info-circle pull-right "></i>
   </label>

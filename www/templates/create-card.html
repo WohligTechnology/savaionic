@@ -1,0 +1,47 @@
+<ion-view title="Create Card">
+  <div class="bar bar-header bar-light header-bottom ">
+    <h1 class="title login-bar"><img src="/img/back.png" alt="back"  class="back" ng-click="goBackHandler();"/><span class="title-name">Summary</span>
+<img src="/img/forward.png" alt="forward" class="forward"/>
+</div>
+
+<ion-content  >
+    <div class="card offer-card" >
+  <div class="offer-img">
+    <img src="" alt="" class="full-image">
+    <!-- <h4 class="promo-text">please add the promo image for this offer</h4> -->
+    <div class="add-promo" >
+        <span class="height-fix">
+            <a class="content">
+                <i class="fa fa-plus"> </i>
+            </a>
+        </span>
+    </div>
+  </div>
+  <div class="preview-bottom offer-text">
+    <input type="text" placeholder="You can add headline here"  class="bottom-disabled"></input>
+  </div>
+  <!-- <label for="" class="item-note">Price Info</label> -->
+
+</div>
+<form action="">
+
+<div>
+    <label for="" class=" margin-to">Price Headline</label>
+    <div class=" row ">
+<input type='text' placeholder="Total %" class="col  offer-input" >
+<input type='text' placeholder="Real % (optional)" class="col  offer-input">
+  </div>
+</div>
+
+
+<div class="margin-button ">
+    <button class="button button-stable button-offer" ui-sref="app.crete-card">
+  Edit
+</button>
+<button class="button button-stable item-note button-offer" ui-sref="app.create-offer">
+  Next
+</button>
+</div>
+</form>
+    </ion-content>+
+</ion-view>

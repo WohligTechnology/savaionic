@@ -11,28 +11,30 @@
 </div>
     <ion-content >
 <form class=" business-details " ng-model="previewDetail">
-  <div class="preview-bottom preview-business">
-  <i class="fa fa-building"></i><input type="text" placeholder="Branch Name" class="bottom-disabled"></input>
+  <div class="preview-bottom preview-business ">
+  <i class="fa fa-building"></i><input type="text" placeholder="Branch Name" value="Tea Villa" class="bottom-disabled"></input>
 </div>
 <div class="preview-bottom preview-business">
-<i class="fa  fa-newspaper-o"></i><input type="text" placeholder="Branch id" class="bottom-disabled"></input>
+<i class="fa  fa-newspaper-o"></i><input type="text" placeholder="Branch id" value="555555" class="bottom-disabled"></input>
 </div>
 <div class="preview-bottom preview-business">
-  <i class="fa fa-map-marker"></i><input type="text" placeholder="Address" class="bottom-disabled"></input>
+  <i class="fa fa-map-marker"></i><input type="text" placeholder="Address" value="Sion Laxmi Nivas" class="bottom-disabled"></input>
 </div>
   <div class="preview-bottom preview-business">
-  <i class="fa fa-phone"></i><input type="text" placeholder="Contact number" class="bottom-disabled"></input>
+  <i class="fa fa-phone"></i><input type="text" placeholder="Contact number" value="9999999999" class="bottom-disabled"></input>
 </div>
   <div class="preview-bottom preview-business">
-  <i class="fa fa-user-plus"></i><input type="text" placeholder="Number of Employess" class="bottom-disabled"></input>
+  <i class="fa fa-user-plus"></i><input type="text" placeholder="Number of Employess" value="5"class="bottom-disabled"></input>
 </div>
 <label for="" class="item label-header">Photo</label>
-<img src="/img/photos.png" alt=""  class="photos"/>
-<img src="/img/photos.png" alt="" class="photos"/>
-<img src="/img/photos.png" alt="" class="photos"/>
+<div class="all-margin">
+  <img src="img/burgerking.jpg" alt=""  class="photos"/>
+  <img src="img/burgerking.jpg" alt=""  class="photos"/>
+  <img src="img/burgerking.jpg" alt=""  class="photos"/>
+</div>
 
 <label class="item label-header">Hours</label>
-<div class="time-margin">
+<div class="time-margin all-margin">
   <label  class="">Monday 10:00 am to 2pm ,6pm to 10:00 pm</label>
 
 </div>
@@ -40,34 +42,37 @@
   <label  class="">Tuesday 10:00 am to 5pm ,6pm to 10:00 pm</label>
 
 </div>
-<div class="preview-bottom preview-business">
-<i class="fa fa-shopping-bag "></i><input type="text" placeholder="Establishement Types eg (Casual Dining)" class="bottom-disabled"></input>
+<div class="preview-bottom preview-business all-margin">
+<i class="fa fa-shopping-bag "></i><input type="text" placeholder="Establishement Types eg (Casual Dining)" value="Casual Dining" class="bottom-disabled"></input>
 </div>
  <div class="preview-bottom preview-business">
-  <i class="fa fa-list "></i><input type="text" placeholder="Cuisines (South American,Continental)" class="bottom-disabled"></input>
+  <i class="fa fa-list "></i><input type="text" placeholder="Cuisines (South American,Continental)" value="South American,Continental" class="bottom-disabled"></input>
+</div>
+ <div class="preview-bottom preview-business">
+  <i class="fa fa-calendar-plus-o "></i><input type="text" placeholder="Type of Appointment" value="Booking" class="bottom-disabled"></input>
 </div>
 <div>
-  <label class="item-input item-select select-regstration sign-up-margin num-branch preview-business">
+  <!-- <label class="item-input item-select select-regstration sign-up-margin num-branch preview-business">
         <i class="fa fa-calendar-plus-o icon-user sign-up-color"> </i>
       <select class="registration-select sign-up-color ">
           <option value=""  disabled selected >Type of Appointment</option>
-        <option>Blue</option>
-        <option>Green</option>
-        <option>Red</option>
+        <option>Appointment 1</option>
+        <option>Appointment 2</option>
+        <option>Appointment 3</option>
       </select>
-    </label>
+    </label> -->
   </div>
 
   <label for="" class="item label-header">Payment Method</label>
-  <div class="time-margin">
+  <div class="time-margin all-margin">
     <label  class="">Credit Card,Debit Card,Other Cards</label>
 
   </div>
  <div class="preview-bottom preview-business">
-  <i class="fa fa-eur"></i><input type="text" placeholder="Avg. Cost Per Visit Per Person" class="bottom-disabled"></input>
+  <i class="fa fa-eur"></i><input type="text" placeholder="Avg. Cost Per Visit Per Person"  value="5" class="bottom-disabled"></input>
 </div>
 <div class="preview-bottom preview-business">
-<i class="fa fa-tags"></i><input type="text" placeholder="Tags (eg. Private)" class="bottom-disabled"></input>
+<i class="fa fa-tags"></i><input type="text" placeholder="Tags (eg. Private)"  value="Private" class="bottom-disabled"></input>
 </div>
 
   <button class="button button-block  button-light continue sign-up" ui-sref="success">

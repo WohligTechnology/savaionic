@@ -14,11 +14,11 @@
 
 <form class="form-margin" action="index.html" method="post">
   <div class="business-reg">
-    <div>
+    <div class="input-margin">
     <i class="fa fa-building  icon-user sign-up-color"> </i>
   <input type="text" placeholder="Branch Name"  class="registration-select">
 </div>
-    <div>
+    <div class="input-margin">
     <i class="fa fa-newspaper-o  icon-user sign-up-color"> </i>
   <input type="text" placeholder="Branch ID"  class="registration-select">
 </div>
@@ -28,7 +28,7 @@
   <button class="button button-positive plusbutton"><i class="fa fa-plus"></i></button>
 </div> -->
 
-  <div class=" enter-otp add-button">
+  <div class=" enter-otp add-button input-margin">
 
     <i class="fa fa-map-marker icon-lock sign-up-color"> </i>
 
@@ -36,25 +36,28 @@
   <button class="button button-positive plusbutton  password-eye" ui-sref="branch-address"><i class="fa fa-plus"></i></button>
 </div>
 
-    <div>
+    <div class="input-margin">
     <i class="fa fa-phone  icon-user sign-up-color"> </i>
   <input type="text" placeholder="Contact Number"  class="registration-select">
 </div>
 
-<button class="add-more button button-positive button-clear" >Add more</button>
+<button class="add-more button button-positive button-clear" disabled>Add more</button>
 
-<div >
+<div class="input-margin">
 <i class="fa fa-user-plus  icon-user sign-up-color"> </i>
 <input type="text" placeholder="Number of Employees"  class="registration-select">
 </div>
 <label for="" class="item label-header">Photo
 <button class="button button-positive plusbutton"><i class="fa fa-plus"></i></button>
 </label>
-<img src="/img/photos.png" alt=""  class="photos"/>
-<img src="/img/photos.png" alt="" class="photos"/>
-<img src="/img/photos.png" alt="" class="photos"/>
-<img src="/img/photos.png " alt="" class="photos"/>
-<button class="button button-light add-photo ">Add photo</i></button>
+<div class="all-margin">
+  <img src="/img/photos.png" alt=""  class="photos"/>
+  <img src="/img/photos.png" alt="" class="photos"/>
+  <img src="/img/photos.png" alt="" class="photos"/>
+  <img src="/img/photos.png " alt="" class="photos"/>
+  <button class="button button-light add-photo ">Add photo</i></button>
+</div>
+
 
 <label class="item label-header">Hours</label>
 <div class="time-margin">
@@ -87,7 +90,7 @@
 
 
 </label>
-<div class="day">
+<div class="day all-margin">
 <button class="button button-positive day-button" name="button">Mon</button>
 <button class="button button-positive day-button" name="button">Tue</button>
 <button class="button button-positive day-button" name="button">Wed</button>
@@ -97,17 +100,18 @@
 <button class="button button-positive day-button" name="button">Sun</button>
 <button class="button button-positive day-button" name="button">Select All</button>
 </div>
-<div>
+<div class="all-margin all-bottom">
 <i class="fa fa-shopping-bag  icon-user sign-up-color"> </i>
 <input type="text" placeholder="Establishement Types eg (Casual Dining)"  class="registration-select">
 </div>
-<div>
+<div class="all-bottom">
 <i class="fa fa-list  icon-user sign-up-color"> </i>
 <input type="text" placeholder="Cuisines (South American,Continental)"  class="registration-select">
 </div>
-<div class="collection">
-  <input type='checkbox' > collection
 
+<div class=" i-agree-checkbox custom-checkbox col">
+  <input type='checkbox' id="collection">
+  <label for="collection" class="i-agree sign-up-color login-text check">collection</label>
 </div>
 
 <label class="item-input item-select select-regstration sign-up-margin">
@@ -117,38 +121,53 @@
 
     <select class="registration-select sign-up-color">
         <option value=""  disabled selected >Type of Appointment</option>
-      <option>Blue</option>
-      <option>Green</option>
-      <option>Red</option>
+        <option>Appointment 1</option>
+        <option>Appointment 2</option>
+        <option>Appointment 3</option>
     </select>
   </label>
-  <label for="" class="item label-header">Payment Method
+  <label for="" class="item label-header ">Payment Method
   <button class="button button-positive plusbutton"><i class="fa fa-plus"></i></button>
 </label>
 <div class="payment">
-  <label>
-    <input type='checkbox' > Credit Card
-  </label>
-  <label>
-  <input type='checkbox' > Debit Card
-</label>
-<label>
-  <input type='checkbox' > Cash
-</label>
-<label>
-  <input type='checkbox' > AMEX
-</label>
-<label >
-  <input type='checkbox' > Other Cards
-</label>
+  <div class="row">
+    <div class="  custom-checkbox col">
+      <input type='checkbox' id="Credit">
+      <label for="Credit" class="i-agree sign-up-color login-text ">Credit Card</label>
+    </div>
+    <div class="  custom-checkbox col">
+      <input type='checkbox' id="Debit">
+      <label for="Debit" class="i-agree sign-up-color login-text">Debit Card</label>
+    </div>
+    <div class="  custom-checkbox col">
+      <input type='checkbox' id="Cash">
+      <label for="Cash" class="i-agree sign-up-color login-text">Cash</label>
+    </div>
+  </div>
+<div class="row">
+  <div class="  custom-checkbox col">
+    <input type='checkbox' id="AMEX">
+    <label for="AMEX" class="i-agree sign-up-color login-text">AMEX</label>
+  </div>
+  <div class="  custom-checkbox col">
+    <input type='checkbox' id="Other">
+    <label for="Other" class="i-agree sign-up-color login-text">Other Cards</label>
+  </div>
+  <div class="  custom-checkbox col">
+    <!-- <input type='checkbox' id="Other">
+    <label for="Other" class="i-agree sign-up-color login-text">Other Cards</label> -->
+  </div>
+</div>
+
+
 
 </div>
 
-  <div>
+  <div class="all-bottom">
   <i class="fa fa-eur  icon-user sign-up-color"> </i>
   <input type="text" placeholder="Avg. Cost Per Visit Per Person"  class="registration-select">
   </div>
-  <div class=" enter-otp">
+  <div class=" enter-otp all-bottom">
              <i class="fa fa-tags icon-tag sign-up-color"> </i>
                      <input type="text" placeholder="Tags (eg. Private)"  class="password">
   <i class=" fa fa-info-circle password-eye"></i>
