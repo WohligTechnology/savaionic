@@ -12405,8 +12405,8 @@ input[type='date'] {
   margin-left: 12px;
   margin-right: 12px; }
   .question select {
-    width: 90% !important;
-    margin-left: 11px;
+    width: 95% !important;
+    margin-left: -4px;
     margin-bottom: 5px; }
   .question button {
     margin-top: 80px !important; }
