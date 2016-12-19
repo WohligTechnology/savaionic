@@ -12107,6 +12107,12 @@ a.button {
 .google-plus {
   color: #d34836 !important; }
 
+.bar.bar-royal {
+  border-color: #e74b1a;
+  background-color: #e74b1a;
+  background-image: linear-gradient(0deg, #e74b1a, #e74b1a 50%, transparent 50%);
+  color: #fff; }
+
 .im-new {
   color: #fff !important;
   background-color: #e74b1a !important; }
@@ -12224,7 +12230,7 @@ input[type='date'] {
   margin-bottom: 25px; }
 
 .all-bottom {
-  margin-bottom: 15px; }
+  margin-bottom: 15px !important; }
 
 .header-bottom {
   border-bottom: 1px solid #595959; }
@@ -12265,7 +12271,7 @@ input[type='date'] {
   border-width: 1px; }
 
 .login-text {
-  font-size: 12px; }
+  font-size: 14px; }
 
 .item-radio input:checked + .radio-content .radio-icon:after {
   visibility: visible; }
@@ -12319,6 +12325,10 @@ input[type='date'] {
 
 .sign-up-margin {
   margin-bottom: 10px !important; }
+
+.appointment {
+  margin-bottom: 10px !important;
+  margin-left: -15px; }
 
 .margin-sava {
   margin-top: -20px !important; }
@@ -12439,7 +12449,7 @@ input[type='date'] {
   margin-left: 7px !important; }
 
 .margin-footer {
-  margin-bottom: 45px; }
+  margin-bottom: 55px; }
 
 .bottom-disabled {
   border-bottom: 0px !important;
@@ -12517,8 +12527,10 @@ input[type='date'] {
   background-color: #e74b1a !important;
   margin-top: -30px;
   margin-right: 15px;
-  height: 12px;
-  width: 12px; }
+  height: 50px;
+  width: 50px;
+  min-width: 25px;
+  min-height: 25px; }
   .circle i {
     font-size: 25px;
     text-align: center;
@@ -12530,7 +12542,12 @@ input[type='date'] {
     border-bottom: 0px !important; }
 
 .business-details {
-  margin-top: 170px;
+  margin-top: 160px;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.business-app {
+  margin-top: 140px;
   margin-left: 20px;
   margin-right: 20px; }
 
@@ -13021,8 +13038,13 @@ input[type='date'] {
 .circle-position {
   float: right;
   margin-top: -60px;
-  height: 10px;
-  width: 10px; }
+  height: 12px;
+  width: 12px;
+  min-width: 12px;
+  min-height: 12px; }
+
+.fa-circle:before {
+  content: ""; }
 
 .time-emp {
   float: right;
@@ -13091,7 +13113,9 @@ input[type='date'] {
     font-size: 16px; }
 
 .offer-card {
-  margin: 20px; }
+  margin: 20px;
+  padding: 5px;
+  border-radius: 10px; }
 
 .bg-color {
   background-color: #EFEFEF; }
@@ -13243,6 +13267,7 @@ input[type='date'] {
   border-color: #e74b1a; }
 
 .add-promo {
+  top: 40px;
   background-color: #e74b1a;
   opacity: 0.9;
   color: white;
@@ -13261,9 +13286,6 @@ input[type='date'] {
     position: relative;
     top: -10px;
     right: 10px; }
-
-.promo-text {
-  position: relative; }
 
 .tab-content {
   margin-top: 94px !important; }
@@ -13288,10 +13310,18 @@ input[type='date'] {
 .offer-img {
   height: 150px; }
   .offer-img img {
-    height: 100%; }
+    height: 100%;
+    width: 100%;
+    border-radius: 10px; }
 
 .offer-text {
-  margin: 15px; }
+  margin: 10px; }
+  .offer-text label {
+    display: block;
+    font-size: 16px; }
+  .offer-text .green-text {
+    display: inline-block;
+    color: #02897C !important; }
 
 .stamp-color {
   color: #02897C !important; }
@@ -13410,3 +13440,13 @@ input[type='date'] {
 
 .side-menu ion-list ion-item a.item-content.active {
   background: #e74b1a !important; }
+
+.card-create {
+  position: relative; }
+  .card-create img {
+    position: absolute; }
+  .card-create label {
+    position: absolute;
+    bottom: 10px;
+    margin-left: 10px;
+    color: #b6b6b6; }

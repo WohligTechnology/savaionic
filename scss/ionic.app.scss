@@ -160,6 +160,12 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .google-plus{
   color: #d34836 !important;
 }
+.bar.bar-royal {
+    border-color: $orange;
+    background-color: $orange;
+    background-image: linear-gradient(0deg, $orange, $orange 50%, transparent 50%);
+    color: #fff;
+}
 .im-new{
   color: #fff !important;
   background-color: $orange !important;
@@ -293,7 +299,7 @@ input[type='password']
   margin-bottom: 25px;
 }
 .all-bottom{
-  margin-bottom: 15px;
+  margin-bottom: 15px!important;
 }
 .header-bottom{
   border-bottom: 1px solid $login-grey;
@@ -339,7 +345,7 @@ input[type='password']
   border-width: 1px;
 }
 .login-text{
-  font-size: 12px;
+  font-size: 14px;
 }
 .item-radio input:checked + .radio-content .radio-icon:after{
   visibility: visible;
@@ -399,6 +405,10 @@ input[type='password']
 }
 .sign-up-margin{
   margin-bottom: 10px!important;
+}
+.appointment{
+  margin-bottom: 10px!important;
+  margin-left: -15px;
 }
 .margin-sava{
   margin-top: -20px!important;
@@ -540,7 +550,7 @@ input[type='password']
   margin-left: 7px!important;
 }
 .margin-footer{
-  margin-bottom: 45px;
+  margin-bottom: 55px;
 
 }
 .bottom-disabled{
@@ -626,8 +636,10 @@ margin-left: -17px;
   background-color: $orange!important;
   margin-top: -30px;
   margin-right: 15px;
-  height: 12px;
-  width: 12px;
+  height: 50px;
+  width: 50px;
+  min-width: 25px;
+  min-height: 25px;
   i{
     font-size: 25px;
     text-align: center;
@@ -641,7 +653,12 @@ margin-left: -17px;
   }
 }
 .business-details{
-  margin-top: 170px;
+  margin-top: 160px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.business-app{
+  margin-top: 140px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -1195,8 +1212,13 @@ padding-top: 60px;
 .circle-position{
   float: right;
   margin-top: -60px;
-  height: 10px;
-  width: 10px;
+  height: 12px;
+  width: 12px;
+  min-width: 12px;
+  min-height: 12px;
+}
+.fa-circle:before {
+    content: "";
 }
 .time-emp{
   float: right;
@@ -1275,8 +1297,11 @@ padding-top: 60px;
     font-size: 16px;
   }
 }
+
 .offer-card{
   margin: 20px;
+  padding: 5px;
+  border-radius: 10px;
 }
 .bg-color{
   background-color: #EFEFEF;
@@ -1460,6 +1485,7 @@ padding-top: 60px;
   }
 }
 .add-promo{
+  top: 40px;
   background-color: #e74b1a;
 opacity: 0.9;
 color: white;
@@ -1479,9 +1505,7 @@ i{
       top: -10px;
       right: 10px;}
 }
-.promo-text{
-position: relative;
-}
+
 .tab-content{
   margin-top: 94px!important;
 }
@@ -1511,10 +1535,22 @@ display: inline-flex;
   height: 150px;
   img{
     height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
   }
 }
 .offer-text{
-  margin: 15px;
+  margin: 10px;
+  label{
+    display: block;
+    font-size: 16px;
+  }
+  .green-text{
+    display: inline-block;
+    color:  #02897C!important;
+
+  }
 }
 .stamp-color{
   color:  #02897C!important;
@@ -1651,6 +1687,18 @@ display: inline-flex;
 }
 .side-menu {
   ion-list ion-item a.item-content.active  {
-background: $orange !important;
+  background: $orange !important;
 }
+}
+.card-create{
+  position: relative;
+  img{
+    position: absolute;
+  }
+  label{
+    position: absolute;
+    bottom: 10px;
+    margin-left: 10px;
+    color: #b6b6b6;
+  }
 }
